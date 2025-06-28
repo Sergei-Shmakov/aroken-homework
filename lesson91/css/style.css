@@ -50,12 +50,13 @@ body {
 }
 
 h1 {
+	mardin-bottom: 30px;
 	font-size: 52px;
 	font-weight: 600;
 }
 
 .advantages__list {
-	margin: 25px 0;
+	margin-bottom: 25px;
 	font-size: 24px;
 }
 .list__item {
