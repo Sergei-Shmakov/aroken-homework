@@ -143,10 +143,10 @@ h1 {
 	grid-template: repeat(4, 1fr) / repeat(4, 1fr);
 	grid-auto-flow: dense;
 }
-.gallery__item--left {
+.gallery__item-left {
 	grid-area: 1 / 1 / 3 / 3;
 }
-.gallery__item--right {
+.gallery__item-right {
 	grid-area: 3 / 3 / 5 / 5;
 }
 .small-laptop {
