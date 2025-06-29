@@ -1,6 +1,6 @@
 body {
 	font-family: 'Montserrat', 'Arial', sans-serif;
-	line-height: 150%;
+	line-height: 1.5;
 	color: #25282b;
 	background: #f8fcff;
 }
@@ -121,7 +121,7 @@ h1 {
 	grid-area: 1/1/3/2;
 	padding-right: 10px;
 	font-weight: 500;
-	line-height: 125%;
+	line-height: 1.25;
 	border-color: #d0dce7;
 	border-width: 2px;
 	border-style: solid;
@@ -143,10 +143,10 @@ h1 {
 	grid-template: repeat(4, 1fr) / repeat(4, 1fr);
 	grid-auto-flow: dense;
 }
-.gallery__item1 {
+.gallery__item--left {
 	grid-area: 1 / 1 / 3 / 3;
 }
-.gallery__item2 {
+.gallery__item--right {
 	grid-area: 3 / 3 / 5 / 5;
 }
 .small-laptop {
@@ -168,7 +168,7 @@ h1 {
 	width: 100%;
 	height: 0%;
 	font-weight: 500;
-	line-height: 181%;
+	line-height: 1.81;
 	color: #f8fcff;
 	background: #1d6fb6b3;
 	align-content: center;
