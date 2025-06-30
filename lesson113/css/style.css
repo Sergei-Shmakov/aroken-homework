@@ -1,0 +1,74 @@
+body {
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	line-height: 1.5;
+	color: #25282b;
+	background: #53a6e6;
+	min-height: 200vh;
+}
+.body--fixed {
+	overflow-y: hidden;
+}
+.button {
+	margin-top: 50vh;
+	max-width: 288px;
+	width: 100%;
+	min-height: 44px;
+	background: #d0dce7;
+	justify-self: center;
+	align-content: center;
+	justify-items: center;
+	border-radius: 100px;
+	color: #1d6fb6;
+	cursor: pointer;
+}
+.button--active {
+	transition: 500ms;
+}
+
+.button--active:hover {
+	background: #1d6fb6;
+	color: #d0dce7;
+}
+.modal {
+	background: #09304d;
+	position: fixed;
+	inset: 0;
+	z-index: 2;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 500ms;
+}
+
+.modal--active {
+	display: flex;
+	opacity: 1;
+	visibility: visible;
+}
+.modal__window {
+	position: relative;
+	width: 25vw;
+	min-height: 25vh;
+	padding: 2vh;
+	background-color: #d0dce7;
+	border-radius: 15px;
+	text-align: center;
+	align-content: center;
+	font-weight: 500;
+}
+
+.modal__close {
+	position: absolute;
+	top: 5%;
+	right: 3.5%;
+	width: 30px;
+	height: 30px;
+	font-size: 20px;
+	font-weight: 700;
+	background: none;
+	border: none;
+	color: #0d2d46;
+	cursor: pointer;
+}
