@@ -104,7 +104,7 @@
 		display: none;
 	}
 	.gallery__inner {
-		grid-template-column: 1fr;
+		grid-template: none;
 	}
 	.gallery__info {
 		max-width: none;
