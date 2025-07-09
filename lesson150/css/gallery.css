@@ -1,0 +1,97 @@
+.gallery__inner {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 32px;
+	margin-bottom: 40px;
+}
+.gallery__img {
+	justify-self: center;
+	align-self: center;
+}
+.gallery__img img {
+	max-width: 100%;
+}
+.gallery__content {
+	display: flex;
+	gap: 30px 15px;
+	align-items: end;
+	justify-content: space-between;
+}
+.gallery__info {
+	max-width: 380px;
+}
+.gallery__title {
+	margin-bottom: 20px;
+}
+
+.galley__nav {
+	display: flex;
+	gap: 98px;
+	align-items: center;
+	font-family: 'Gabriola';
+	font-size: 42px;
+	line-height: 0.9;
+	position: relative;
+}
+
+.gallery__next,
+.gallery__prev {
+	cursor: pointer;
+	background: transparent;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	border: 1px solid var(--accent-color);
+	flex-shrink: 0;
+	transition: var(--transition);
+}
+.swiper-button-disabled.gallery__next,
+.swiper-button-disabled.gallery__prev {
+	border: 1.5px solid #e1d9e1;
+	cursor: auto;
+}
+.swiper-button-disabled.gallery__next:hover,
+.swiper-button-disabled.gallery__prev:hover {
+	background: var(--general-bg);
+}
+.swiper-button-disabled.gallery__next path,
+.swiper-button-disabled.gallery__prev path {
+	fill: #e1d9e1;
+}
+.swiper-button-disabled.gallery__next:hover path,
+.swiper-button-disabled.gallery__prev:hover path {
+	fill: #e1d9e1;
+}
+.gallery__next:hover,
+.gallery__prev:hover {
+	background: var(--accent-color);
+}
+.gallery__next:hover path,
+.gallery__prev:hover path {
+	fill: var(--general-bg);
+}
+.gallery__next path,
+.gallery__prev path {
+	transition: var(--transition);
+}
+
+.gallery__pagination {
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	bottom: auto;
+	width: auto;
+}
+
+.gallery__slide {
+	border-radius: var(--border-radius);
+	overflow: hidden;
+}
+.gallery__slide img {
+	width: 100%;
+}
