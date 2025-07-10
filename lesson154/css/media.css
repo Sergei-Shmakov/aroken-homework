@@ -186,6 +186,9 @@
 	}
 }
 @media (max-width: 600px) {
+	.header {
+		margin-bottom: 40px;
+	}
 	.title {
 		font-size: 12vw;
 	}
@@ -243,7 +246,6 @@
 	}
 	.main__program,
 	.main__gallery,
-	.header__hero,
 	.main__testimonials {
 		padding-bottom: 80px;
 	}
