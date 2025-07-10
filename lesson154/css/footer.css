@@ -1,0 +1,76 @@
+.footer {
+	background: #ab8261;
+	color: var(--general-bg);
+	padding: 60px 0 66px;
+}
+
+.footer__inner {
+	display: grid;
+	gap: 40px 30px;
+	justify-content: space-between;
+	grid-template-columns: auto repeat(2, 1.1fr) auto;
+}
+
+.footer__col:first-child {
+	max-width: 272px;
+	width: 100%;
+	margin-top: -30px;
+}
+
+.logo__text {
+	margin-bottom: 20px;
+}
+.footer-logo img {
+	width: 100%;
+}
+.socials-icons {
+	display: flex;
+	gap: 15px;
+	line-height: 1;
+}
+
+.social-icon__link path {
+	transition: var(--transition);
+}
+.social-icon__link:hover path {
+	fill: var(--accent-color);
+}
+.footer-nav {
+	margin-bottom: -5px;
+	max-width: 182px;
+	width: 100%;
+	margin-left: 15%;
+}
+
+.footer-nav__item {
+	margin-bottom: 10px;
+}
+.footer-nav__item:last-child {
+	margin-bottom: 0;
+}
+.nav__link {
+	padding: 5px 0;
+}
+.time-location__item {
+	margin-bottom: 10px;
+}
+.time-location__item:last-child {
+	margin-bottom: 0;
+}
+
+.consultation-tel {
+	margin-bottom: 47px;
+}
+.consultation-number {
+	display: block;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.6;
+	transition: var(--transition);
+}
+.consultation-number:hover {
+	color: var(--accent-color);
+}
+.consultation__item {
+	color: #dec5b1;
+}
