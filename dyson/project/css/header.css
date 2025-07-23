@@ -1,0 +1,102 @@
+.header {
+	background: var(--general-text);
+	color: var(--dark-mode-text);
+}
+.header__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 90px;
+	width: 100%;
+	gap: 15px;
+}
+.left-group {
+	display: flex;
+	align-items: center;
+}
+
+.burger-icon:hover path {
+	stroke: var(--accent-color);
+	box-shadow: 0px 0px 20px var(--accent-color);
+}
+.list__item,
+.menu-nav__item,
+.number,
+.busket path,
+.burger-icon path,
+.play path {
+	transition: var(--transition);
+}
+.body--opened-menu .burger-icon {
+	transform: rotate(90deg);
+}
+.body--opened-menu .burger-icon path {
+	stroke: var(--accent-color);
+	box-shadow: 0px 0px 20px var(--accent-color);
+}
+
+.right-group {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	font-weight: 700;
+	line-height: 1.5;
+}
+
+.country {
+	width: 37px;
+	height: 37px;
+}
+
+.busket {
+	position: relative;
+}
+.item-point {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: var(--dark-mode-text);
+	position: absolute;
+	right: 10%;
+	bottom: 20%;
+}
+.item__count {
+	color: var(--general-text);
+	font-size: 10px;
+	text-align: center;
+}
+
+.busket:hover path {
+	stroke: var(--accent-color);
+	box-shadow: 0px 0px 20px var(--accent-color);
+}
+.opened-menu {
+	background: var(--general-text);
+	overflow: hidden;
+	opacity: 0;
+	height: 0;
+	transition: var(--transition);
+	color: var(--dark-mode-text);
+	font-family: 'namu-pro';
+	font-weight: 900;
+}
+.body--opened-menu .opened-menu {
+	overflow: visible;
+	opacity: 1;
+	height: 100%;
+}
+
+.menu-nav {
+	padding: 30px 80px;
+	font-family: 'namu-pro';
+	font-style: normal;
+	font-weight: 900;
+}
+
+.menu-nav__list {
+	display: grid;
+	align-content: center;
+	justify-content: space-between;
+	grid-template: repeat(1, auto) / repeat(6, auto);
+	gap: 20px 20px;
+}

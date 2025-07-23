@@ -1,0 +1,40 @@
+.footer {
+	background: var(--general-text);
+	padding: 50px 0 60px 0;
+}
+.footer__inner,
+.copiried {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 25px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300;
+}
+.footer__inner h4 {
+	font-family: 'namu-pro';
+	font-size: 24px;
+	font-weight: 900;
+	padding-bottom: 10px;
+}
+.footer__list {
+	display: grid;
+	gap: 6px;
+}
+.footer__number {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.5;
+}
+.footer__connect {
+	margin-right: 115px;
+}
+.socials__list {
+	display: flex;
+	gap: 20px;
+	padding-top: 30px;
+}
+.copiried {
+	justify-self: end;
+	padding: 30px 20px 0 0;
+}
