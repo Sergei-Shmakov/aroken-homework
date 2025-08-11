@@ -7,7 +7,7 @@
 	display: flex;
 	justify-content: space-between;
 	padding-top: 25px;
-	color: #fff;
+	color: var(--dark-mode-text);
 	font-size: 18px;
 	font-weight: 300;
 }

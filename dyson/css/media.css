@@ -1,13 +1,215 @@
-@media (max-width: 1300px) {
-	.promo__text {
-		margin-top: -7%;
+@media (max-width: 1400px) {
+	.news-list {
+		max-width: 97vw;
 	}
-	.promo__img img {
-		margin-top: 7%;
-		margin-bottom: -14%;
+	.news-list-item,
+	.news-list-item__img {
+		max-width: 31.4vw;
+	}
+	:root {
+		--card-height: 41.5vmax;
+	}
+	.new__body {
+		padding: 1.5vw 0;
+	}
+	.news-list-item__img {
+		padding-bottom: 2.1vw;
+	}
+	.news__title {
+		padding-bottom: 5vw;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+
+	.card__title {
+		font-size: 22px;
+		margin: 2.8vw 2.8vw 1.8vw;
+	}
+	.card-price {
+		margin: 0 2.8vw;
+	}
+	.card-price__now {
+		font-size: 38px;
+	}
+	.card-form__input,
+	.in-bascet {
+		height: 4.6vw;
+	}
+	.selected__filter {
+		padding: 0.5vw 1vw;
+		gap: 0.5vw;
+	}
+	.filter__list__item span {
+		padding: 0 1vw;
+	}
+}
+@media (max-width: 1300px) {
+	.button {
+		font-size: 24px;
+		max-width: 18vw;
+		min-width: 140px;
+	}
+
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.sale__logo img {
+		max-width: 9.4vw;
+		width: 100%;
+		min-width: 100px;
+	}
+	.airwrap__img img {
+		max-width: 50vw;
+	}
+	.sale__inner {
+		min-height: 43vw;
+	}
+	.group-text {
+		max-width: 40vw;
+		width: 100%;
+	}
+	.img__bag {
+		max-width: 14.6vw;
+		width: 100%;
+	}
+	.img__complect {
+		max-width: 69.2vw;
+		width: 100%;
+	}
+	.airwrap-text__inner h3 {
+		margin-bottom: 2vw;
+	}
+
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.advantages,
+	.accordion,
+	.news,
+	.special-offers {
+		padding: 11.5vw 0;
+	}
+	.advantages__title {
+		font-size: 42px;
+		padding-bottom: 4.6vw;
+	}
+
+	.advantages-list__item {
+		max-width: 33.8vw;
+		width: 100%;
+		height: 25vw;
+	}
+	.item__title {
+		font-family: 'namu-pro';
+		font-size: 20px;
+		font-weight: 900;
+		padding-bottom: 13px;
+	}
+	.item__subtitle {
+		font-family: 'Open-sans';
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 1.3;
+	}
+	.advantages-list__item hgroup {
+		padding: 0 15px 3.5vw;
+	}
+	.advantages-list__item {
+		padding-top: 2vw;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+	:root {
+		--card-height: 42vmax;
+	}
+	.show__more svg {
+		margin-left: 1vw;
+	}
+	.show__more {
+		min-width: 220px;
+		margin-top: 3vw;
+	}
+	.show-more__text,
+	.card__title {
+		font-size: 20px;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.special-offers__title {
+		padding-bottom: 4vw;
+	}
+	.card-price__now {
+		font-size: 34px;
+	}
+	.card-price__stock {
+		margin-left: 2vw;
+		font-size: 16px;
+	}
+
+	.swiper_comunication {
+		margin-top: 10vw;
+	}
+
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.feedback {
+		padding: 8vw 0;
+	}
+	.feedback__inner {
+		gap: 2.5vw;
+	}
+	.feedback__legend {
+		font-size: 36px;
+		padding-bottom: 6vw;
+	}
+	.feedback__button {
+		font-size: 22px;
+		margin-top: 5vw;
+	}
+	.checkbox {
+		min-width: 28px;
+		min-height: 28px;
+		margin-right: 1vw;
+	}
+	.feedback__input {
+		padding-bottom: 0.875vw;
+	}
+	.feedback__checkbox {
+		padding-top: 2vw;
+	}
+}
+@media (max-width: 1200px) {
+	.card__title {
+		font-size: 20px;
+		margin: 2.5vw 2.5vw 1.5vw;
+	}
+	.card-price {
+		margin: 0 2.5vw;
+	}
+	.card-price__now {
+		font-size: 30px;
+	}
+	.card-price__stock {
+		font-size: 15px;
+	}
+	.card-form__input,
+	.in-bascet {
+		height: 4.6vw;
+	}
+	.card-prev,
+	.card-next {
+		width: 54px;
+		height: 54px;
 	}
 }
 @media (max-width: 1100px) {
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.promo__inner {
+		height: 70vw;
+	}
+	.promo-video__video img,
+	.promo__img img {
+		max-width: 50vw;
+	}
 	.promo__title {
 		font-size: 40px;
 		line-height: 1;
@@ -17,38 +219,428 @@
 		font-size: 16px;
 		line-height: 1.3;
 	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.advantages__title,
+	.accordion-title,
+	.sale__title,
+	.news__title,
+	.special-offers__title {
+		font-size: 36px;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.group-text {
+		max-width: 36vw;
+		width: 100%;
+	}
+
+	.new__data,
+	.new__text,
+	.new__link,
+	.subitle,
+	.accordion__item-text,
+	.airwrap__subitle,
+	.feedback__input::placeholder,
+	.keywords-list__button,
+	.filter-text,
+	.filter__list__item span {
+		font-size: 16px;
+	}
+
+	.sale__title b,
+	.sale__title b mark {
+		font-size: 54px;
+	}
+
+	.airwrap-text__inner h3 {
+		font-size: 38px;
+	}
+	.airwrap__title,
+	.card-price__before,
+	.button,
+	.card-pagination {
+		font-size: 22px;
+	}
+
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.product-cards-list {
+		max-height: 115vmin;
+	}
+	.product-cards-list__item {
+		margin-bottom: 10px;
+	}
+	.card__title {
+		font-size: 18px;
+		max-height: 15%;
+	}
+
+	.card-price__now {
+		font-size: 26px;
+		margin: 10px 0 20px 0;
+	}
+	.card-price__sale {
+		height: 3vw;
+		font-size: 18px;
+		max-width: 90px;
+	}
+	.card-price__stock {
+		margin-left: 1.5vw;
+	}
+	.card-price__stock::before {
+		width: 9px;
+		height: 9px;
+		left: -15%;
+	}
+
+	.in-bascet,
+	.feedback__button {
+		font-size: 20px;
+	}
+	.filter-selector,
+	.selected__filter,
+	.filter__list {
+		max-width: 220px;
+	}
+	.filter__list__item {
+		max-height: 50px;
+	}
+
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.accordion__item {
+		min-height: 90px;
+	}
+	.accordion-plus-button {
+		max-width: 33px;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+	:root {
+		--card-height: 38vmax;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.feedback__legend {
+		font-size: 32px;
+	}
+	.feedback__checkbox span {
+		font-size: 14px;
+	}
+	.checkbox {
+		min-width: 26px;
+		min-height: 26px;
+	}
+	.feedback__checkbox {
+		padding-top: 2.5vw;
+	}
 }
 
 @media (max-width: 1000px) {
+	.button,
+	.card-form__input input[type='number'],
+	.card-pagination {
+		font-size: 20px;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
 	.menu-nav__list {
 		grid-template-columns: repeat(3, auto);
 	}
 
 	/* ========================================================================== */
 
+	.promo-video__inner {
+		max-height: 50vh;
+	}
 	/* ========================================================================== */
 
 	.footer__connect {
 		margin-right: 60px;
 	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.advantages-list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.advantages-list__item {
+		max-width: 45vw;
+		width: 100%;
+		height: 25vw;
+		padding-top: 4vw;
+	}
+	.advantages-list__item svg {
+		max-width: 70px;
+		max-height: 70px;
+	}
+	.item__title,
+	.accordion__item-title,
+	.new__title,
+	.show-more__text,
+	.in-bascet,
+	.card-price__before,
+	.feedback__button {
+		font-size: 18px;
+	}
+	.item__subtitle,
+	.subitle,
+	.airwrap__subitle {
+		font-size: 16px;
+	}
+
+	/* ================================================================================ */
+	/* ================================================================================ */
+
+	.sale__title,
+	.accordion-title,
+	.news__title {
+		font-size: 32px;
+	}
+	.sale__title b,
+	.sale__title b mark {
+		font-size: 48px;
+	}
+	.airwrap-text__inner h3 {
+		font-size: 34px;
+	}
+	.airwrap__title {
+		font-size: 22px;
+	}
+
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.product-cards-list {
+		max-height: 90vmax;
+	}
+	.card-img {
+		max-width: 300px;
+	}
+	.product-cards-list__item {
+		max-width: 300px;
+		margin-bottom: 10px;
+	}
+	.card__title {
+		font-size: 16px;
+		max-height: 15%;
+	}
+
+	.card-price__now {
+		font-size: 22px;
+		margin: 10px 0 20px 0;
+	}
+	.card-price__sale {
+		height: 3vw;
+		font-size: 16px;
+		max-width: 90px;
+	}
+	.card-price__stock {
+		font-size: 14px;
+		margin-left: 1.5vw;
+	}
+	.card-price__stock::before {
+		width: 9px;
+		height: 9px;
+		left: -15%;
+	}
+	.filter-selector,
+	.selected__filter,
+	.filter__list {
+		max-width: 210px;
+	}
+	.card-prev,
+	.card-next {
+		width: 44px;
+		height: 44px;
+	}
+	.card-prev svg,
+	.card-next svg {
+		width: 28px;
+		height: 28px;
+	}
+
+	/* ================================================================================ */
+	/* ================================================================================ */
+
+	.news-list-item,
+	.news-list-item__img {
+		max-width: 30vw;
+	}
+	:root {
+		--card-height: 36vmax;
+	}
+	.show__more {
+		min-width: 210px;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.feedback__legend {
+		font-size: 28px;
+	}
+
+	.checkbox {
+		min-width: 24px;
+		min-height: 24px;
+	}
+	.feedback__checkbox {
+		padding-top: 2.7vw;
+	}
 }
 @media (max-width: 900px) {
+	.button,
+	.card-pagination {
+		font-size: 18px;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
 	.promo__title {
 		font-size: 35px;
 	}
-	.promo__subtitle {
+
+	.new__data,
+	.new__text,
+	.new__link,
+	.promo__subtitle,
+	.subitle,
+	.accordion__item-text,
+	.item__subtitle,
+	.feedback__input::placeholder,
+	.keywords-list__button,
+	.filter-text,
+	.filter__list__item span {
 		font-size: 14px;
 	}
 	.promo-video__inner {
 		padding: 70px 0 30px;
 	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+
+	.sale__title,
+	.accordion-title,
+	.news__title {
+		font-size: 28px;
+	}
+	.sale__title b,
+	.sale__title b mark {
+		font-size: 40px;
+	}
+
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.item__title,
+	.accordion__item-title,
+	.new__title,
+	.show-more__text,
+	.card-price__before {
+		font-size: 16px;
+	}
+	.advantages-list__item svg {
+		max-width: 60px;
+		max-height: 60px;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.product-cards-list {
+		max-height: 81vmax;
+	}
+	.card-img {
+		max-width: 280px;
+	}
+	.product-cards-list__item {
+		max-width: 280px;
+		margin-bottom: 10px;
+	}
+	.card__title {
+		font-size: 14px;
+		max-height: 15%;
+	}
+
+	.card-price__now {
+		font-size: 20px;
+		margin: 10px 0 20px 0;
+	}
+	.card-price__sale {
+		height: 3vw;
+		font-size: 12px;
+		max-width: 90px;
+	}
+	.card-price__stock {
+		font-size: 12px;
+		margin-left: 1.5vw;
+	}
+	.card-price__stock::before {
+		width: 9px;
+		height: 9px;
+		left: -15%;
+	}
+
+	.card-form {
+		grid-template-columns: 1fr;
+	}
+	.in-bascet {
+		font-size: 16px;
+		max-width: 100%;
+		height: 50px;
+	}
+	.card-form__input {
+		display: none;
+	}
+	.card-prev,
+	.card-next {
+		width: 40px;
+		height: 40px;
+	}
+	.card-prev svg,
+	.card-next svg {
+		width: 26px;
+		height: 26px;
+	}
+
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.accordion__item {
+		min-height: 80px;
+	}
+	.accordion-plus-button {
+		max-width: 30px;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+	:root {
+		--card-height: 32.5vmax;
+	}
+	.show__more {
+		min-width: 180px;
+	}
+	.show__more svg {
+		max-width: 20px;
+	}
+
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.feedback__legend {
+		font-size: 24px;
+	}
+	.feedback__checkbox span {
+		font-size: 12px;
+	}
+	.checkbox {
+		min-width: 22px;
+		min-height: 22px;
+	}
+	.feedback__checkbox {
+		padding-top: 3.2vw;
+	}
 }
 @media (max-width: 800px) {
-	.country {
-		overflow: hidden;
-		opacity: 0;
-		position: absolute;
+	.button,
+	.airwrap__title,
+	.card-pagination {
+		font-size: 16px;
 	}
+	/* ================================================================================ */
+	/* ================================================================================ */
 	.menu-nav__list {
 		grid-template-columns: repeat(2, auto);
 		justify-content: stretch;
@@ -71,13 +663,179 @@
 	.promo__title {
 		font-size: 30px;
 	}
-	.promo__subtitle {
+	.promo__subtitle,
+	.new__title,
+	.item__title {
+		font-size: 14px;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+
+	.new__data,
+	.new__text,
+	.new__link,
+	.subitle,
+	.airwrap__subitle,
+	.item__subtitle,
+	.card__title,
+	.card-price__before,
+	.feedback__input::placeholder,
+	.keywords-list__button,
+	.filter-text,
+	.filter__list__item span {
 		font-size: 12px;
+	}
+	.sale__title,
+	.accordion-title,
+	.news__title,
+	.airwrap-text__inner h3 {
+		font-size: 26px;
+	}
+	.sale__title b,
+	.sale__title b mark {
+		font-size: 36px;
+	}
+
+	.group-img__inner {
+		justify-items: end;
+	}
+
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.advantages-list__item svg {
+		max-width: 50px;
+		max-height: 50px;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.product-cards-list {
+		max-height: 90vmax;
+	}
+	.product-cards-list__item,
+	.card-img {
+		max-width: 230px;
+	}
+
+	.card-price__now,
+	.feedback__legend {
+		font-size: 20px;
+	}
+
+	.card-price__stock,
+	.feedback__checkbox span {
+		font-size: 10px;
+	}
+	.card-price__stock::before {
+		width: 7px;
+		height: 7px;
+	}
+
+	.in-bascet {
+		font-size: 16px;
+		max-width: 100%;
+		height: 40px;
+	}
+	.filter-selector,
+	.selected__filter {
+		max-width: 180px;
+		max-height: 30px;
+	}
+
+	.filter-selector {
+		top: -50px;
+	}
+	.selected__filter {
+		padding: 0 15px;
+	}
+	.card-prev,
+	.card-next {
+		width: 36px;
+		height: 36px;
+	}
+	.card-prev svg,
+	.card-next svg {
+		width: 24px;
+		height: 24px;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.news__title {
+		justify-self: center;
+	}
+	.news-list {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+		max-width: 80vw;
+		justify-self: center;
+	}
+	.news-list-item {
+		max-width: 35vw;
+	}
+	.news-list-item__img {
+		max-width: 35vw;
+		padding-bottom: 30px;
+	}
+	:root {
+		--card-height: 31vmax;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+
+	.feedback__button {
+		font-size: 14px;
+		margin-top: 2vw;
+		max-height: 36px;
+	}
+	.checkbox {
+		min-width: 20px;
+		min-height: 20px;
+	}
+	.feedback__checkbox {
+		padding-top: 4.4vw;
 	}
 }
 @media (max-width: 700px) {
+	/* =================================================================== */
+
+	/* =================================================================== */
+	.language-selector,
+	.header__number {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+	}
+	.language-selector__menu,
+	.menu__number {
+		visibility: visible;
+		opacity: 1;
+		position: relative;
+	}
+	.menu-nav__list {
+		grid-template-columns: repeat(1, auto);
+	}
+	.header__logo {
+		padding-left: 0%;
+		padding-right: 10%;
+	}
+	/* =================================================================== */
+
+	/* =================================================================== */
 	.promo__inner {
 		grid-template-columns: 1fr;
+		justify-items: center;
+		text-align: center;
+		height: auto;
+		max-height: 60vh;
+	}
+	.promo__img {
+		justify-self: center;
+		align-self: center;
+	}
+	.promo__img img,
+	.airwrap__img img {
+		position: relative;
 	}
 	.promo-video__text {
 		grid-row: 1 / 2;
@@ -85,20 +843,11 @@
 	.promo__text {
 		margin-top: 40px;
 	}
-	.promo__img {
-		padding: 0 15%;
-	}
-	.promo__img img {
-		margin-top: 0%;
-		margin-bottom: 0%;
-	}
 	.promo-video__video {
 		padding: 0 15%;
 		justify-self: center;
 	}
-	.promo-video__text {
-		margin-top: 20px;
-	}
+
 	.promo-video__inner {
 		padding: 15px 0;
 	}
@@ -106,15 +855,132 @@
 		top: 55%;
 		left: 75%;
 	}
+	/* =================================================================== */
+
+	/* =================================================================== */
+	.sale__inner {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.text__inner {
+		justify-items: center;
+	}
+	.sale__inner hgroup {
+		display: grid;
+		justify-items: center;
+	}
+	.group-img__inner {
+		justify-items: start;
+	}
+	.group-text {
+		max-width: 100%;
+	}
+
+	.airwrap__img {
+		justify-self: center;
+		padding-top: 15px;
+	}
+
+	.airwrap-group-text {
+		padding-right: 0;
+	}
+	.airwrap-text__inner {
+		justify-content: center;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.advantages__title,
+	.special-offers__title {
+		font-size: 30px;
+	}
+	.advantages-list {
+		grid-template-columns: 1fr;
+	}
+	.advantages-list__item {
+		display: grid;
+		grid-template-columns: 0.4fr 0.6fr;
+		align-items: center;
+		text-align: left;
+		padding: 0;
+		max-width: 95vw;
+	}
+	.advantages-list__item hgroup {
+		width: 100%;
+		line-height: 1;
+		padding: 10px 10px 10px 0;
+	}
+	.item__title {
+		font-size: 16px;
+	}
+	.item__subtitle {
+		font-size: 14px;
+	}
+	.advantages-list__item svg {
+		max-width: 70px;
+		max-height: 70px;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.product-cards-list {
+		max-height: 120vmax;
+		justify-items: center;
+	}
+	.product-cards-list__item {
+		max-width: 200px;
+		min-height: 370px;
+	}
+	.card__link {
+		min-height: 310px;
+	}
+	.card-img {
+		max-width: 200px;
+	}
+	.card__title {
+		font-size: 10px;
+		max-height: 12%;
+	}
+	.card-price__sale {
+		max-width: 60px;
+		min-height: 20px;
+	}
+	.card-price__stock {
+		font-size: 9px;
+	}
+
+	.card-price__now {
+		font-size: 18px;
+	}
+
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.accordion-plus-button {
+		max-width: 28px;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+	:root {
+		--card-height: 30vmax;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.feedback__inner {
+		grid-template-columns: 1fr;
+		gap: 12vw;
+		padding: 0 15vw;
+	}
+
+	.feedback__checkbox {
+		align-items: center;
+	}
 }
 @media (max-width: 600px) {
 	.header__number {
-		overflow: hidden;
+		visibility: hidden;
 		opacity: 0;
 		position: absolute;
-	}
-	.header__logo {
-		padding-right: 50px;
 	}
 	/* ========================================================================== */
 
@@ -139,25 +1005,154 @@
 		justify-self: center;
 		text-align: center;
 	}
+	/* ========================================================================== */
+
+	/* ========================================================================== */
+	.product-cards-list {
+		max-height: 60vmax;
+		justify-items: center;
+	}
+	.product-cards-list__item {
+		max-width: 250px;
+	}
+	.card__link {
+		padding: 0 10%;
+	}
+
+	/* ========================================================================== */
+
+	/* ========================================================================== */
+	.advantages__title,
+	.special-offers__title {
+		font-size: 26px;
+	}
+	.advantages-list__item svg {
+		max-width: 60px;
+		max-height: 60px;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+	:root {
+		--card-height: 29vmax;
+	}
 }
 @media (max-width: 500px) {
-	.header__logo {
-		padding-right: 20px;
-	}
 	.header__inner {
 		gap: 10px;
 	}
 	.theme-mode {
 		margin: 0 10px;
 	}
-	.menu-nav__list {
-		grid-template-columns: repeat(1, auto);
+
+	.menu-nav {
+		padding: 30px 40px;
 	}
 	/* ========================================================================== */
 
 	/* ========================================================================== */
+	.promo__inner {
+		padding-top: 20px;
+	}
+	.promo__text {
+		margin-top: 0;
+	}
 	.promo__title {
 		font-size: 26px;
+	}
+	.promo__img img {
+		width: 30vmax;
+	}
+	/* =============================================================================== */
+	/* =============================================================================== */
+	.subitle,
+	.accordion__item-text,
+	.item__subtitle {
+		font-size: 12px;
+	}
+	.sale__title,
+	.accordion-title,
+	.news__title {
+		font-size: 24px;
+	}
+	.sale__title b,
+	.sale__title b mark {
+		font-size: 30px;
+	}
+
+	.airwrap-text__inner h3 {
+		font-size: 24px;
+	}
+	.airwrap__title,
+	.item__title,
+	.accordion__item-title,
+	.show-more__text {
+		font-size: 14px;
+	}
+	/* =============================================================================== */
+	/* =============================================================================== */
+	.advantages__title,
+	.news__title,
+	.special-offers__title {
+		font-size: 23px;
+	}
+	.advantages-list__item {
+		height: 30vw;
+	}
+	.advantages-list__item svg {
+		max-width: 50px;
+		max-height: 50px;
+	}
+
+	/* =============================================================================== */
+	/* =============================================================================== */
+	.card__link {
+		padding: 0 0;
+	}
+	.card-price__stock {
+		margin-left: 15px;
+	}
+
+	/* =============================================================================== */
+	/* =============================================================================== */
+
+	.accordion-plus-button {
+		max-width: 26px;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+	:root {
+		--card-height: 405px;
+	}
+
+	.news-list {
+		grid-template-columns: 1fr;
+		max-width: 80vw;
+		justify-self: center;
+	}
+	.news-list-item {
+		max-width: 70vw;
+	}
+	.news-list-item__img {
+		max-width: 70vw;
+		padding-bottom: 30px;
+	}
+	.show__more {
+		min-width: 160px;
+		padding: 5px;
+		justify-content: space-around;
+	}
+	.show__more svg {
+		max-width: 15px;
+	}
+	/* ================================================================================ */
+	/* ================================================================================ */
+
+	.feedback__inner {
+		padding: 0 10vw;
+	}
+	.feedback__button {
+		min-width: 170px;
+		margin-top: 0;
 	}
 }
 @media (max-width: 400px) {
@@ -171,9 +1166,6 @@
 		height: 20px;
 		margin-left: 3px;
 	}
-	.header__logo {
-		padding-right: 0;
-	}
 	.header__inner {
 		transform: scale(0.9);
 		margin: 0 -15px;
@@ -184,10 +1176,64 @@
 	.right-group {
 		margin-right: -20px;
 	}
+	.header__logo {
+		padding-left: 0%;
+		padding-right: 5%;
+	}
 	/* ========================================================================== */
 
 	/* ========================================================================== */
+	.promo,
+	.promo-video {
+		text-align: center;
+	}
 	.promo__title {
 		font-size: 24px;
+	}
+	.promo-video__text {
+		max-width: 80vmin;
+	}
+	/* =============================================================================== */
+	/* =============================================================================== */
+	.advantages__title,
+	.accordion-title,
+	.news__title,
+	.special-offers__title {
+		font-size: 20px;
+	}
+	.advantages-list__item {
+		height: 40vw;
+	}
+	/* =============================================================================== */
+	/* =============================================================================== */
+	.product-cards-list {
+		max-height: 60vmax;
+	}
+	.card__link {
+		padding: 0 10%;
+	}
+	.swiper_comunication {
+		justify-content: center;
+	}
+	/* =============================================================================== */
+	/* =============================================================================== */
+
+	.accordion-plus-button {
+		max-width: 24px;
+	}
+
+	/* ================================================================================ */
+	/* ================================================================================ */
+
+	.news-list,
+	.news-list-item__img,
+	.news-list-item {
+		max-width: 90vw;
+	}
+
+	/* ================================================================================ */
+	/* ================================================================================ */
+	.feedback__inner {
+		padding: 0 0;
 	}
 }

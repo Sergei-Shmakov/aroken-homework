@@ -9,6 +9,7 @@
 			href="./img/logo/main-logo.webp"
 			type="image/x-icon"
 		/>
+		<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 		<title>Dyson</title>
 	</head>
@@ -19,7 +20,7 @@
 				<div class="container">
 					<div class="header__inner">
 						<div class="left-group">
-							<a class="burger-icon" href="#">
+							<button class="burger-icon">
 								<svg
 									width="50"
 									height="50"
@@ -49,25 +50,43 @@
 										stroke-linejoin="round"
 									/>
 								</svg>
-							</a>
+							</button>
 							<button class="theme-mode">
 								<div class="theme__pointer"></div>
 							</button>
 						</div>
-						<a class="logo" href="#">
+						<a class="logo header__logo" href="#">
 							<img src="./img/logo/logo.png" alt="Логотип компании Dyson" />
 						</a>
 						<footer class="right-group">
 							<a class="number header__number" href="tel:+79998004554"
 								>+7 (999) 800-45-54</a
 							>
-							<img
-								class="country"
-								src="./img/header/rus.png"
-								alt="Номер телефона с префиксом Российской Федерации"
-							/>
-
-							<div class="busket">
+							<div class="language-selector">
+								<div class="selected__language">
+									<img src="./img/svg/flags/ru.svg" alt="Русский язык" />
+									<span class="language-code">ru</span>
+								</div>
+								<ul class="language__list">
+									<li class="en">
+										<img src="./img/svg/flags/gb.svg" alt="" Английский язык />
+										<span>en</span>
+									</li>
+									<li class="de">
+										<img src="./img/svg/flags/de.svg" alt="Немецкий язык" />
+										<span>de</span>
+									</li>
+									<li class="fr">
+										<img src="./img/svg/flags/fr.svg" alt="Французский язык" />
+										<span>fr</span>
+									</li>
+									<li class="ru">
+										<img src="./img/svg/flags/ru.svg" alt="Русский язык" />
+										<span>ru</span>
+									</li>
+								</ul>
+							</div>
+							<button class="busket">
 								<svg
 									width="48"
 									height="48"
@@ -93,103 +112,1756 @@
 								<div class="item-point">
 									<p class="item__count">1</p>
 								</div>
-							</div>
+							</button>
 						</footer>
 					</div>
 				</div>
+				<section class="opened-menu">
+					<div class="container">
+						<nav class="menu-nav">
+							<ul class="menu-nav__list">
+								<li class="menu-nav__item">
+									<a class="nav__link list__item" href="#offers"
+										>Dyson Supersonic</a
+									>
+								</li>
+								<li class="menu-nav__item list__item">
+									<a class="nav__link" href="#offers">Dyson Airwrap</a>
+								</li>
+								<li class="menu-nav__item list__item">
+									<a class="nav__link" href="#advantages">Доставка и оплата</a>
+								</li>
+								<li class="menu-nav__item list__item">
+									<a class="nav__link" href="#advantages">Сервис</a>
+								</li>
+								<li class="menu-nav__item list__item">
+									<a class="nav__link" href="#contact">Сертификаты</a>
+								</li>
+								<li class="menu-nav__item list__item">
+									<a class="nav__link" href="#contact">Контакты</a>
+								</li>
+								<li class="menu-nav__item">
+									<a class="number menu__number" href="tel:+79998004554"
+										>+7 (999) 800-45-54</a
+									>
+									<div class="language-selector language-selector__menu">
+										<div class="selected__language__menu selected__language">
+											<img src="./img/svg/flags/ru.svg" alt="Русский язык" />
+											<span class="language-code">ru</span>
+										</div>
+										<ul class="language__list__menu language__list">
+											<li class="en">
+												<img
+													src="./img/svg/flags/gb.svg"
+													alt=""
+													Английский
+													язык
+												/>
+												<span>en</span>
+											</li>
+											<li class="de">
+												<img src="./img/svg/flags/de.svg" alt="Немецкий язык" />
+												<span>de</span>
+											</li>
+											<li class="fr">
+												<img
+													src="./img/svg/flags/fr.svg"
+													alt="Французский язык"
+												/>
+												<span>fr</span>
+											</li>
+											<li class="ru">
+												<img src="./img/svg/flags/ru.svg" alt="Русский язык" />
+												<span>ru</span>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</section>
 			</header>
-			<section class="opened-menu">
-				<div class="container">
-					<nav class="menu-nav">
-						<ul class="menu-nav__list">
-							<li class="menu-nav__item">
-								<a class="nav__link" href="#">Dyson Supersonic</a>
-							</li>
-							<li class="menu-nav__item">
-								<a class="nav__link" href="#">Dyson Airwrap</a>
-							</li>
-							<li class="menu-nav__item">
-								<a class="nav__link" href="#">Доставка и оплата</a>
-							</li>
-							<li class="menu-nav__item">
-								<a class="nav__link" href="#">Сервис</a>
-							</li>
-							<li class="menu-nav__item">
-								<a class="nav__link" href="#">Сертификаты</a>
-							</li>
-							<li class="menu-nav__item">
-								<a class="nav__link" href="#">Контакты</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</section>
-			<section class="promo">
-				<div class="container">
-					<div class="promo__inner">
-						<hgroup class="promo__text">
-							<h2 class="promo__title">
-								Создание локонов и волн.<br />Разглаживание.<br />Высушивание
-								волос.<br />Без экстремальных температур
-							</h2>
-							<p class="promo__subtitle">
-								Стайлер Dyson Airwrap™ имеет цилиндрические насадки для<br />создания
-								локонов или волн, а также щетки для разглаживания<br />и
-								придания объема. Подберите насадки индивидуально<br />в
-								зависимости от своего типа волос и желаемой укладки<br />или
-								выберите один из наших комплектов.
-							</p>
-						</hgroup>
-						<div class="promo__img">
-							<img
-								src="./img/foto/promo-1.png"
-								alt="Девушка создает идеальные локоны и волны с помощью стайлера Dyson Airwrap"
-							/>
+			<main>
+				<section class="promo">
+					<div class="container">
+						<div class="promo__inner">
+							<hgroup class="promo__text">
+								<h2 class="promo__title">
+									Создание локонов и волн.<br />Разглаживание.<br />Высушивание
+									волос.<br />Без экстремальных температур
+								</h2>
+								<p class="promo__subtitle">
+									Стайлер Dyson Airwrap™ имеет цилиндрические насадки для<br />создания
+									локонов или волн, а также щетки для разглаживания<br />и
+									придания объема. Подберите насадки индивидуально<br />в
+									зависимости от своего типа волос и желаемой укладки<br />или
+									выберите один из наших комплектов.
+								</p>
+							</hgroup>
+							<div class="promo__img">
+								<img
+									src="./img/foto/promo-1.png"
+									alt="Девушка создает идеальные локоны и волны с помощью стайлера Dyson Airwrap"
+								/>
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section class="promo-video">
-				<div class="container">
-					<div class="promo-video__inner promo__inner">
-						<div class="promo-video__video">
-							<img
-								src="./img/foto/promo-3.png"
-								alt="Девушка создает идеальные локоны с помощью эффекта Коанда и стайлера Dyson Airwrap"
-							/>
+				</section>
+				<section class="sale">
+					<div class="container">
+						<div class="sale__inner">
+							<div class="group-text">
+								<div class="text__inner">
+									<hgroup>
+										<a class="logo sale__logo" href="#">
+											<img
+												src="./img/logo/logo.png"
+												alt="Логотип компании Dyson"
+											/>
+										</a>
+										<small class="subitle"
+											>Технологии для ухода за волосами</small
+										>
+									</hgroup>
+									<h2 class="sale__title">
+										До конца февраля <br />
+										<b>СКИДКА <mark>10%</mark></b>
+									</h2>
+									<button class="button">
+										<a href="#offers"> Подробнее </a>
+									</button>
+								</div>
+							</div>
+							<div class="group-img">
+								<div class="group-img__inner">
+									<img
+										class="img__bag"
+										src="./img/sale/bag.png"
+										alt="Cумка для хранения Dyson airwrap"
+									/>
+									<img
+										class="img__complect"
+										src="./img/sale/Group2.png"
+										alt="Полный комплект Dyson airwrap"
+									/>
+								</div>
+							</div>
 						</div>
-						<hgroup class="promo-video__text">
-							<h2 class="promo-video__title promo__title">
-								Как сделать локоны с помощью эффекта Коанда
-							</h2>
-							<p class="promo-video__subtitle promo__subtitle">
-								Используя сочетание содержащейся в волосах влаги с мощным
-								воздушным потоком и контролируемым нагревом, стайлер Dyson
-								Airwrap™ позволяет сушить и укладывать волосы одновременно. Без
-								экстремальных температур.
-							</p>
-						</hgroup>
-						<a
-							class="play"
-							href="https://www.youtube.com/watch?v=zypEMfa_kDM"
-							target="parent"
-						>
+					</div>
+				</section>
+				<section class="promo-video">
+					<div class="container">
+						<div class="promo-video__inner promo__inner">
+							<div class="promo-video__video">
+								<img
+									src="./img/foto/promo-3.png"
+									alt="Девушка создает идеальные локоны с помощью эффекта Коанда и стайлера Dyson Airwrap"
+								/>
+							</div>
+							<hgroup class="promo-video__text">
+								<h2 class="promo-video__title promo__title">
+									Как сделать локоны с помощью эффекта Коанда
+								</h2>
+								<p class="promo-video__subtitle promo__subtitle">
+									Используя сочетание содержащейся в волосах влаги с мощным
+									воздушным потоком и контролируемым нагревом, стайлер Dyson
+									Airwrap™ позволяет сушить и укладывать волосы одновременно.
+									Без экстремальных температур.
+								</p>
+							</hgroup>
+							<a
+								class="play"
+								href="https://www.youtube.com/watch?v=zypEMfa_kDM"
+								target="parent"
+							>
+								<svg
+									width="33"
+									height="38"
+									viewBox="0 0 33 38"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M32 17.268C33.3333 18.0378 33.3333 19.9623 32 20.7321L3.5 37.1865C2.16667 37.9563 0.500002 36.9941 0.500002 35.4545L0.500004 2.54552C0.500004 1.00592 2.16667 0.0436645 3.5 0.813465L32 17.268Z"
+										fill="#111111"
+									/>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="advantages" id="advantages">
+					<div class="container">
+						<h2 class="advantages__title">Почему выбирают нас</h2>
+						<ul class="advantages-list">
+							<li class="advantages-list__item">
+								<svg
+									width="74"
+									height="80"
+									viewBox="0 0 74 80"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M0 1.48649C0 0.665523 0.665523 0 1.48649 0H11.0056C11.7171 0 12.3287 0.504066 12.4647 1.20237L15.5479 17.036H72.514C73.335 17.036 74.0005 17.7015 74.0005 18.5225V29.6329V40.0026V50.3723C74.0005 51.1933 73.335 51.8588 72.514 51.8588H20.5248H12.4921V64.4404H72.514C73.335 64.4404 74.0005 65.1059 74.0005 65.9269C74.0005 66.7478 73.335 67.4134 72.514 67.4134H62.3712C63.663 68.7489 64.4593 70.5769 64.4593 72.593C64.4593 76.6838 61.181 80 57.1369 80C53.0928 80 49.8145 76.6838 49.8145 72.593C49.8145 70.5769 50.6108 68.7489 51.9026 67.4134H33.0809C34.3728 68.7489 35.1691 70.5769 35.1691 72.593C35.1691 76.6838 31.8907 80 27.8466 80C23.8026 80 20.5242 76.6838 20.5242 72.593C20.5242 70.5769 21.3205 68.7489 22.6124 67.4134H11.0056C10.1847 67.4134 9.51916 66.7478 9.51916 65.9269V50.3723C9.51916 49.5513 10.1847 48.8858 11.0056 48.8858H18.7209L17.0465 40.2867L15.0273 29.917L12.8638 18.8066L9.78069 2.97297H1.48649C0.665523 2.97297 0 2.30745 0 1.48649ZM21.7498 48.8858H71.0275V41.4891H20.3094L21.7498 48.8858ZM19.7305 38.5161H71.0275V31.1194H18.2902L19.7305 38.5161ZM17.7113 28.1464H71.0275V20.0089H16.1268L17.7113 28.1464ZM27.8466 77.027C30.2167 77.027 32.1961 75.0741 32.1961 72.593C32.1961 70.112 30.2167 68.1591 27.8466 68.1591C25.4766 68.1591 23.4972 70.112 23.4972 72.593C23.4972 75.0741 25.4766 77.027 27.8466 77.027ZM61.4864 72.593C61.4864 75.0741 59.507 77.027 57.1369 77.027C54.7668 77.027 52.7874 75.0741 52.7874 72.593C52.7874 70.112 54.7668 68.1591 57.1369 68.1591C59.507 68.1591 61.4864 70.112 61.4864 72.593Z"
+										fill="#C5358C"
+									/>
+								</svg>
+								<hgroup>
+									<h3 class="item__title">Широкий ассортимент</h3>
+									<small class="item__subtitle"
+										>Большой выбор техники<br />и аксессуаров</small
+									>
+								</hgroup>
+							</li>
+							<li class="advantages-list__item">
+								<svg
+									width="79"
+									height="56"
+									viewBox="0 0 79 56"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M0 1.48649C0 0.665523 0.665523 0 1.48649 0H17.7247H36.9158H52.4167C53.2376 0 53.9031 0.665523 53.9031 1.48649V8.84002H66.4412C67.0807 8.84002 67.6486 9.24903 67.8512 9.85561L72.6788 24.3102H77.513C78.334 24.3102 78.9995 24.9757 78.9995 25.7966V45.6868C78.9995 46.5078 78.334 47.1733 77.513 47.1733H75.1921C74.4702 52.165 70.1664 56.0004 64.965 56.0004C59.5105 56.0004 55.043 51.7826 54.6582 46.4366H52.4311L52.4167 46.4367H30.984C30.5992 51.7826 26.1317 56.0004 20.6772 56.0004C15.2228 56.0004 10.7553 51.7826 10.3705 46.4367H1.48649C0.665523 46.4367 0 45.7712 0 44.9502V1.48649ZM54.872 43.4637C55.8907 38.8364 60.0226 35.3735 64.965 35.3735C70.1663 35.3735 74.4701 39.2088 75.1921 44.2003H76.0265V27.2831H71.6081H53.9035V43.4637H54.872ZM50.9302 43.4637H30.7702C29.7516 38.8364 25.6196 35.3735 20.6772 35.3735C15.7349 35.3735 11.6029 38.8364 10.5843 43.4637H2.97297V2.97297H16.2382V16.22C16.2382 16.7429 16.5131 17.2275 16.9619 17.4958C17.4108 17.7642 17.9677 17.7769 18.4284 17.5293L27.3203 12.7508L36.2121 17.5293C36.6728 17.7769 37.2297 17.7642 37.6786 17.4958C38.1274 17.2275 38.4023 16.7429 38.4023 16.22V2.97297H50.9302V43.4637ZM53.9031 24.3102H69.5444L65.3705 11.813H53.9031V24.3102ZM19.2112 2.97297H35.4293V13.7336L28.0239 9.75386C27.5845 9.51772 27.056 9.51772 26.6166 9.75386L19.2112 13.7336V2.97297ZM31.0012 26.5332C31.0012 25.7123 31.6667 25.0468 32.4877 25.0468H42.8214C43.6423 25.0468 44.3078 25.7123 44.3078 26.5332C44.3078 27.3542 43.6423 28.0197 42.8214 28.0197H32.4877C31.6667 28.0197 31.0012 27.3542 31.0012 26.5332ZM35.4402 33.887C34.6192 33.887 33.9537 34.5525 33.9537 35.3735C33.9537 36.1945 34.6192 36.86 35.4402 36.86H42.8206C43.6415 36.86 44.3071 36.1945 44.3071 35.3735C44.3071 34.5525 43.6415 33.887 42.8206 33.887H35.4402ZM20.6772 53.0274C24.7479 53.0274 28.0379 49.7355 28.0379 45.6869C28.0379 41.6384 24.7479 38.3465 20.6772 38.3465C16.6066 38.3465 13.3166 41.6384 13.3166 45.6869C13.3166 49.7355 16.6066 53.0274 20.6772 53.0274ZM72.3257 45.6869C72.3257 49.7355 69.0357 53.0274 64.965 53.0274C60.8943 53.0274 57.6043 49.7355 57.6043 45.6869C57.6043 41.6384 60.8943 38.3465 64.965 38.3465C69.0357 38.3465 72.3257 41.6384 72.3257 45.6869Z"
+										fill="#C5358C"
+									/>
+								</svg>
+								<hgroup>
+									<h3 class="item__title">Быстрая доставка</h3>
+									<small class="item__subtitle"
+										>По Москве — 2-3 часа;<br />По России — 2-4 дня</small
+									>
+								</hgroup>
+							</li>
+							<li class="advantages-list__item">
+								<svg
+									width="80"
+									height="55"
+									viewBox="0 0 80 55"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										opacity="0.9"
+										d="M32.7907 2H2V53H32.7907M32.7907 2H78V53H32.7907M32.7907 2V53M9.62791 27.3591H24.3256M9.62791 38.7238H24.3256M9.62791 15.6188H24.3256M63.0251 12.4254L48.4186 41.0718M70.1861 35.5304C70.1861 39.0577 67.3956 41.9171 63.9535 41.9171C60.5113 41.9171 57.7209 39.0577 57.7209 35.5304C57.7209 32.0031 60.5113 29.1436 63.9535 29.1436C67.3956 29.1436 70.1861 32.0031 70.1861 35.5304ZM53.4419 18.2486C53.4419 21.7759 50.6515 24.6354 47.2093 24.6354C43.7672 24.6354 40.9767 21.7759 40.9767 18.2486C40.9767 14.7213 43.7672 11.8619 47.2093 11.8619C50.6515 11.8619 53.4419 14.7213 53.4419 18.2486Z"
+										stroke="#C5358C"
+										stroke-width="3"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+
+								<hgroup>
+									<h3 class="item__title">Специальное предложение</h3>
+									<small class="item__subtitle"
+										>Только для клиентов<br />нашего сайта</small
+									>
+								</hgroup>
+							</li>
+							<li class="advantages-list__item">
+								<svg
+									width="78"
+									height="80"
+									viewBox="0 0 78 80"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M59.5761 46.3411V78H2V36.4098H42.0449H43.3367M59.5761 46.3411L76 37.8086V9.36687C76 9.36687 73.6304 7.69294 72.3538 6.1047C71.1216 4.57176 69.9102 2 69.9102 2H49.288C49.288 2 48.6618 4.56592 47.4629 6.1047C46.2103 7.71236 43.3367 9.36687 43.3367 9.36687V36.4098M59.5761 46.3411L43.3367 36.4098M54.9626 23.0748L58.2843 26.0589L65.4813 19.9975M10.3965 44.4294H21.6534V55.6196H10.3965V44.4294ZM9.28928 64.5718H15.1945V69.0479H9.28928V64.5718ZM46.3815 64.5718H52.2868V69.0479H46.3815V64.5718ZM34.0175 64.5718H39.9227V69.0479H34.0175V64.5718ZM21.6534 64.5718H27.5586V69.0479H21.6534V64.5718Z"
+										stroke="#C5358C"
+										stroke-width="3"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+
+								<hgroup>
+									<h3 class="item__title">Гарантия производителя</h3>
+									<small class="item__subtitle"
+										>Гарантия 2 года<br />на устройства и аксессуары</small
+									>
+								</hgroup>
+							</li>
+							<li class="advantages-list__item">
+								<svg
+									width="80"
+									height="80"
+									viewBox="0 0 80 80"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M1.48649 0C0.665523 0 0 0.665523 0 1.48649V57.7793C0 58.6002 0.665523 59.2657 1.48649 59.2657H35.9741V57.9869C36.0846 70.1634 45.8976 80 57.9866 80C70.1442 80 80 70.0514 80 57.7791C80 45.5301 70.1815 35.596 58.0556 35.5584H60.2078V1.48649C60.2078 0.665523 59.5423 0 58.7213 0H1.48649ZM57.9176 35.5584H57.2348V2.97297H40.3954V16.3004C40.3954 16.8337 40.1097 17.3262 39.6467 17.5909C39.1836 17.8556 38.6143 17.8519 38.1547 17.5813L30.0743 12.8233L21.2743 17.6064C20.8137 17.8567 20.2553 17.846 19.8047 17.578C19.3541 17.3101 19.078 16.8246 19.078 16.3004V2.97297H2.97297V56.2928H35.9741V57.5714C36.0844 45.418 45.8603 35.5958 57.9176 35.5584ZM22.0509 13.8005V2.97297H37.4225V13.7L30.8578 9.83458C30.408 9.56974 29.8523 9.56021 29.3937 9.80947L22.0509 13.8005ZM10.2914 31.1091C9.47041 31.1091 8.80489 31.7746 8.80489 32.5956C8.80489 33.4166 9.47041 34.0821 10.2914 34.0821H26.4355C27.2565 34.0821 27.922 33.4166 27.922 32.5956C27.922 31.7746 27.2565 31.1091 26.4355 31.1091H10.2914ZM67.0323 54.4592C67.6531 53.922 67.7209 52.9832 67.1838 52.3624C66.6466 51.7416 65.7079 51.6737 65.087 52.2109L56.0244 60.0521L52.5764 55.4115C52.0867 54.7525 51.1556 54.6152 50.4966 55.1048C49.8377 55.5944 49.7004 56.5255 50.19 57.1845L54.5929 63.1105C54.8395 63.4423 55.2131 63.6565 55.624 63.7015C56.0349 63.7466 56.4461 63.6185 56.7587 63.348L67.0323 54.4592ZM8.80489 44.4467C8.80489 43.6257 9.47041 42.9602 10.2914 42.9602H22.0326C22.8535 42.9602 23.519 43.6257 23.519 44.4467C23.519 45.2676 22.8535 45.9332 22.0326 45.9332H10.2914C9.47041 45.9332 8.80489 45.2676 8.80489 44.4467ZM77.0649 57.7791C77.0649 68.4151 68.5232 77.0372 57.9866 77.0372C47.4499 77.0372 38.9083 68.4151 38.9083 57.7791C38.9083 47.1432 47.4499 38.5211 57.9866 38.5211C68.5232 38.5211 77.0649 47.1432 77.0649 57.7791Z"
+										fill="#C5358C"
+									/>
+								</svg>
+
+								<hgroup>
+									<h3 class="item__title">Безопасная оплата</h3>
+									<small class="item__subtitle"
+										>Оплата после получения товара</small
+									>
+								</hgroup>
+							</li>
+							<li class="advantages-list__item">
+								<svg
+									width="52"
+									height="77"
+									viewBox="0 0 52 77"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M1.5 0C0.671573 0 0 0.671573 0 1.5V75.5C0 76.3284 0.671573 77 1.5 77H50.5C51.3284 77 52 76.3284 52 75.5V57.37V1.5C52 0.671573 51.3284 0 50.5 0H26H1.5ZM49 3V55.87H3V3H26H49ZM49 74V58.87H3V74H49ZM19.9664 65.86C19.138 65.86 18.4664 66.5316 18.4664 67.36C18.4664 68.1884 19.138 68.86 19.9664 68.86H30.2052C31.0337 68.86 31.7052 68.1884 31.7052 67.36C31.7052 66.5316 31.0337 65.86 30.2052 65.86H19.9664ZM14.9487 16.9535C15.2426 16.6678 15.65 16.5 16.0833 16.5H21.2451L23.4491 21.8568L20.7234 23.4468C20.0373 23.847 19.7821 24.7127 20.1414 25.4211C21.9446 28.9757 24.8991 31.844 28.539 33.5892C29.2307 33.9209 30.0611 33.6772 30.464 33.0245L32.1205 30.3403L37.7083 32.5134V37.4826C37.7083 37.866 37.5521 38.2425 37.2596 38.5268C36.9743 38.8042 36.5821 38.9704 36.1629 38.9799C30.522 38.6346 25.2111 36.3005 21.2249 32.425C17.2411 28.5518 14.8548 23.4071 14.5005 17.9585C14.5108 17.5887 14.6662 17.2281 14.9487 16.9535ZM16.0833 13.5C14.8812 13.5 13.72 13.9639 12.8575 14.8025C11.9935 15.6425 11.5 16.791 11.5 17.9977C11.5 18.0289 11.501 18.0601 11.5029 18.0913C11.892 24.3157 14.6105 30.1784 19.1337 34.576C23.6558 38.9725 29.669 41.6015 36.0365 41.9777C36.066 41.9795 36.0955 41.9803 36.125 41.9803C37.3272 41.9803 38.4883 41.5164 39.3509 40.6778C40.2149 39.8378 40.7083 38.6894 40.7083 37.4826V31.4873C40.7083 30.8686 40.3286 30.3135 39.752 30.0893L32.0437 27.0916C31.3692 26.8293 30.6036 27.086 30.2235 27.7018L28.6501 30.2514C26.5542 29.0144 24.7951 27.3128 23.515 25.2915L26.0891 23.7899C26.736 23.4126 27.0054 22.616 26.7205 21.9235L23.6372 14.4293C23.4058 13.867 22.858 13.5 22.25 13.5H16.0833Z"
+										fill="#C5358C"
+									/>
+								</svg>
+
+								<hgroup>
+									<h3 class="item__title">Бесплатная консультация</h3>
+									<small class="item__subtitle"
+										>В любом удобном для вас формате, 7 дней в неделю</small
+									>
+								</hgroup>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="sale airwrap">
+					<div class="container">
+						<div class="sale__inner airwrap__inner">
+							<div class="group-text airwrap-group-text">
+								<div class="text__inner airwrap-text__inner">
+									<hgroup>
+										<h2 class="airwrap__title">
+											Мультистайлер Dyson Airwrap™ Complete Long
+										</h2>
+										<small class="airwrap__subitle"
+											>Технологии для ухода за волосами</small
+										>
+									</hgroup>
+									<h3>
+										Эксклюзивный цвет <br />
+										<b class="title__blue">Vinca blue/</b
+										><b class="title__rose">Rosén</b>
+									</h3>
+									<button class="button">
+										<a href="#offers"> Подробнее </a>
+									</button>
+								</div>
+							</div>
+							<div class="airwrap__img">
+								<img
+									src="./img/foto/airwrap.png"
+									alt="Девушки делают идеальную укладку с помощью Dyson Airwrap"
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="special-offers" id="offers">
+					<div class="container">
+						<h2 class="special-offers__title">Спецпредложения</h2>
+						<div class="keywords">
+							<ul class="keywords-list" id="keywords-list">
+								<li class="keywords-list__item">
+									<a
+										class="keywords-list__button"
+										href="#vacuum-cleaner-Tab"
+										data-id="vacuum-cleaner-Tab"
+										>dyson пылесос</a
+									>
+								</li>
+								<li class="keywords-list__item">
+									<a
+										class="keywords-list__button"
+										href="#hs05-Tab"
+										data-id="hs05-Tab"
+									>
+										dyson hs05 airwrap compliete
+									</a>
+								</li>
+								<li class="keywords-list__item">
+									<a
+										class="keywords-list__button"
+										href="#hairdryer-Tab"
+										data-id="hairdryer-Tab"
+									>
+										фен щетка дайсон
+									</a>
+								</li>
+								<li class="keywords-list__item">
+									<a
+										class="keywords-list__button"
+										href="#topaz-Tab"
+										data-id="topaz-Tab"
+									>
+										dyson стайлер топаз
+									</a>
+								</li>
+								<li class="keywords-list__item">
+									<a
+										class="keywords-list__button"
+										href="#purifier-Tab"
+										data-id="purifier-Tab"
+									>
+										очиститель воздуха
+									</a>
+								</li>
+								<li class="keywords-list__item">
+									<a
+										class="keywords-list__button"
+										href="#hd07-Tab"
+										data-id="hd07-Tab"
+										>dyson hd07</a
+									>
+								</li>
+								<li class="keywords-list__item">
+									<a
+										class="keywords-list__button"
+										href="#styler-Tab"
+										data-id="styler-Tab"
+									>
+										dyson стайлер
+									</a>
+								</li>
+							</ul>
+							<button class="keywords__full new__link" id="keywords__full">
+								Показать еще
+							</button>
+						</div>
+						<div class="product-card">
+							<div class="product-card__inner swiper">
+								<ul class="product-cards-list swiper-wrapper">
+									<li
+										class="product-cards-list__item swiper-slide hairdryer-Tab hd07-Tab blue-Tab"
+										data-price="59990"
+										data-stock="in-stock"
+										data-sale="15%"
+									>
+										<a class="card__link" href="#">
+											<div class="card-img">
+												<img
+													class="card-img__picture"
+													src="./img/offers/offer-1.png"
+													alt="Фен Dyson Supersonic HD07 синий медный с 5 насадками в
+												чехле и расческами"
+												/>
+											</div>
+											<h3 class="card__title">
+												Фен Dyson Supersonic HD07 синий медный с 5 насадками в
+												чехле и расческами
+											</h3>
+											<div class="card-price">
+												<p class="card-price__stock">В наличии</p>
+												<div class="card-price__sale">-15%</div>
+												<p class="card-price__now">59 990Р</p>
+												<p class="card-price__before">69 990 Р</p>
+											</div>
+										</a>
+										<form class="card-form">
+											<div class="card-form__input">
+												<button
+													class="input__button input-decrement input__button--disabled"
+												>
+													<svg
+														width="20"
+														height="2"
+														viewBox="0 0 20 2"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M19 1H1"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+												<input type="number" value="1" min="1" />
+												<button class="input__button input-increment">
+													<svg
+														width="20"
+														height="20"
+														viewBox="0 0 20 20"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M10.0003 19L10.0346 10M10.0003 1L10.0346 10M10.0346 10H19M10.0346 10H0.999999"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+											</div>
+											<button class="button in-bascet" type="submit">
+												В корзину
+											</button>
+										</form>
+									</li>
+									<li
+										class="product-cards-list__item swiper-slide hairdryer-Tab hd07-Tab pink-Tab"
+										data-price="47990"
+										data-stock="in-stock"
+										data-sale="15%"
+									>
+										<a class="card__link" href="#">
+											<div class="card-img">
+												<img
+													class="card-img__picture"
+													src="./img/offers/offer-2.png"
+													alt="Фен Dyson Supersonic HD07 розовый с 5 насадками и подставкой"
+												/>
+											</div>
+											<h3 class="card__title">
+												Фен Dyson Supersonic HD07 розовый с 5 насадками и
+												подставкой
+											</h3>
+											<div class="card-price">
+												<p class="card-price__stock">В наличии</p>
+												<div class="card-price__sale">-15%</div>
+												<p class="card-price__now">47 990Р</p>
+												<p class="card-price__before">51 990 Р</p>
+											</div>
+										</a>
+										<form class="card-form">
+											<div class="card-form__input">
+												<button
+													class="input__button input-decrement input__button--disabled"
+												>
+													<svg
+														width="20"
+														height="2"
+														viewBox="0 0 20 2"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M19 1H1"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+												<input type="number" value="1" min="1" />
+												<button class="input__button input-increment">
+													<svg
+														width="20"
+														height="20"
+														viewBox="0 0 20 20"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M10.0003 19L10.0346 10M10.0003 1L10.0346 10M10.0346 10H19M10.0346 10H0.999999"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+											</div>
+											<button class="button in-bascet" type="submit">
+												В корзину
+											</button>
+										</form>
+									</li>
+									<li
+										class="product-cards-list__item swiper-slide hairdryer-Tab hd03-Tab lilac-Tab"
+										data-price="46990"
+										data-stock="in-stock"
+										data-sale="15%"
+									>
+										<a class="card__link" href="#">
+											<div class="card-img">
+												<img
+													class="card-img__picture"
+													src="./img/offers/offer-3.png"
+													alt="Фен Dyson Supersonic 4 насадки HD03 с чехлом для хранения
+												цвет сирень"
+												/>
+											</div>
+											<h3 class="card__title">
+												Фен Dyson Supersonic 4 насадки HD03 с чехлом для
+												хранения цвет сирень
+											</h3>
+											<div class="card-price">
+												<p class="card-price__stock">В наличии</p>
+												<div class="card-price__sale">-15%</div>
+												<p class="card-price__now">46 990Р</p>
+												<p class="card-price__before">51 990 Р</p>
+											</div>
+										</a>
+										<form class="card-form">
+											<div class="card-form__input">
+												<button
+													class="input__button input-decrement input__button--disabled"
+												>
+													<svg
+														width="20"
+														height="2"
+														viewBox="0 0 20 2"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M19 1H1"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+												<input type="number" value="1" min="1" />
+												<button class="input__button input-increment">
+													<svg
+														width="20"
+														height="20"
+														viewBox="0 0 20 20"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M10.0003 19L10.0346 10M10.0003 1L10.0346 10M10.0346 10H19M10.0346 10H0.999999"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+											</div>
+											<button class="button in-bascet" type="submit">
+												В корзину
+											</button>
+										</form>
+									</li>
+									<li
+										class="product-cards-list__item swiper-slide hairdryer-Tab hd07-Tab pink-Tab"
+										data-price="59990"
+										data-stock="no-stock"
+										data-sale="15%"
+									>
+										<a class="card__link" href="#">
+											<div class="card-img">
+												<img
+													class="card-img__picture"
+													src="./img/offers/offer-4.jpg"
+													alt="Фен Dyson Supersonic HD07 медного цвета с 5
+													насадками и чехлом. Ускоренная сушка, интеллектуальный
+													контроль, защита волос."
+												/>
+											</div>
+											<h3 class="card__title">
+												Фен Dyson Supersonic HD07 медного цвета с 5 насадками и
+												чехлом
+											</h3>
+											<div class="card-price">
+												<p class="card-price__stock card-price__stock--soldout">
+													Нет в наличии
+												</p>
+												<div class="card-price__sale">-15%</div>
+												<p class="card-price__now">59 990Р</p>
+												<p class="card-price__before">69 990 Р</p>
+											</div>
+										</a>
+										<form class="card-form">
+											<div class="card-form__input">
+												<button
+													class="input__button input-decrement input__button--disabled"
+												>
+													<svg
+														width="20"
+														height="2"
+														viewBox="0 0 20 2"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M19 1H1"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+												<input type="number" value="1" min="1" />
+												<button class="input__button input-increment">
+													<svg
+														width="20"
+														height="20"
+														viewBox="0 0 20 20"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M10.0003 19L10.0346 10M10.0003 1L10.0346 10M10.0346 10H19M10.0346 10H0.999999"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+											</div>
+											<button class="button in-bascet" type="submit">
+												В корзину
+											</button>
+										</form>
+									</li>
+									<li
+										class="product-cards-list__item swiper-slide hairdryer-Tab hd07-Tab silver-Tab"
+										data-price="46990"
+										data-stock="in-stock"
+										data-sale="10%"
+									>
+										<a class="card__link" href="#">
+											<div class="card-img">
+												<img
+													class="card-img__picture"
+													src="./img/offers/offer-5.webp"
+													alt="Dyson Supersonic HD07 с насадками и подставкой."
+												/>
+											</div>
+											<h3 class="card__title">
+												Dyson Supersonic HD07 серебряный с насадками и
+												подставкой
+											</h3>
+											<div class="card-price">
+												<p class="card-price__stock">В наличии</p>
+												<div class="card-price__sale">-10%</div>
+												<p class="card-price__now">46 990 Р</p>
+												<p class="card-price__before">51 990 Р</p>
+											</div>
+										</a>
+										<form class="card-form">
+											<div class="card-form__input">
+												<button
+													class="input__button input-decrement input__button--disabled"
+												>
+													<svg
+														width="20"
+														height="2"
+														viewBox="0 0 20 2"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M19 1H1"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+												<input type="number" value="1" min="1" />
+												<button class="input__button input-increment">
+													<svg
+														width="20"
+														height="20"
+														viewBox="0 0 20 20"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M10.0003 19L10.0346 10M10.0003 1L10.0346 10M10.0346 10H19M10.0346 10H0.999999"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+											</div>
+											<button class="button in-bascet" type="submit">
+												В корзину
+											</button>
+										</form>
+									</li>
+									<li
+										class="product-cards-list__item swiper-slide hairdryer-Tab hd03-Tab pink-Tab"
+										data-price="46990"
+										data-stock="in-stock"
+										data-sale="10%"
+									>
+										<a class="card__link" href="#">
+											<div class="card-img">
+												<img
+													class="card-img__picture"
+													src="./img/offers/offer-6.jpg"
+													alt="Dyson Supersonic HD03 розовый с комплектом насадок, магнитный
+												дизайн, поддержание тепла и сияния"
+												/>
+											</div>
+											<h3 class="card__title">
+												Dyson Supersonic HD03 розовый с комплектом насадок,
+												магнитный дизайн
+											</h3>
+											<div class="card-price">
+												<p class="card-price__stock">В наличии</p>
+												<div class="card-price__sale">-10%</div>
+												<p class="card-price__now">46 990 Р</p>
+												<p class="card-price__before">51 990 Р</p>
+											</div>
+										</a>
+										<form class="card-form">
+											<div class="card-form__input">
+												<button
+													class="input__button input-decrement input__button--disabled"
+												>
+													<svg
+														width="20"
+														height="2"
+														viewBox="0 0 20 2"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M19 1H1"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+												<input type="number" value="1" min="1" />
+												<button class="input__button input-increment">
+													<svg
+														width="20"
+														height="20"
+														viewBox="0 0 20 20"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M10.0003 19L10.0346 10M10.0003 1L10.0346 10M10.0346 10H19M10.0346 10H0.999999"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+											</div>
+											<button class="button in-bascet" type="submit">
+												В корзину
+											</button>
+										</form>
+									</li>
+									<li
+										class="product-cards-list__item swiper-slide hairdryer-Tab hd07-Tab gold-Tab"
+										data-price="40490"
+										data-stock="in-stock"
+										data-sale="20%"
+									>
+										<a class="card__link" href="#">
+											<div class="card-img">
+												<img
+													style="padding-top: 5px"
+													class="card-img__picture"
+													src="./img/offers/offer-7.avif"
+													alt="Dyson Supersonic HD07 Ionic Profesional Onyx/Gold, 1600 W, 5 аксессуаров, чехол. Быстрая сушка, уход за волосами. "
+												/>
+											</div>
+											<h3 class="card__title">
+												Dyson Supersonic HD07 Ionic Profesional Onyx/Gold,
+												1600 W, 5 аксессуаров, чехол.
+											</h3>
+											<div class="card-price">
+												<p class="card-price__stock">В наличии</p>
+												<div class="card-price__sale">-20%</div>
+												<p class="card-price__now">40 490 Р</p>
+												<p class="card-price__before">51 990 Р</p>
+											</div>
+										</a>
+										<form class="card-form">
+											<div class="card-form__input">
+												<button
+													class="input__button input-decrement input__button--disabled"
+												>
+													<svg
+														width="20"
+														height="2"
+														viewBox="0 0 20 2"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M19 1H1"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+												<input type="number" value="1" min="1" />
+												<button class="input__button input-increment">
+													<svg
+														width="20"
+														height="20"
+														viewBox="0 0 20 20"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M10.0003 19L10.0346 10M10.0003 1L10.0346 10M10.0346 10H19M10.0346 10H0.999999"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+											</div>
+											<button class="button in-bascet" type="submit">
+												В корзину
+											</button>
+										</form>
+									</li>
+									<li
+										class="product-cards-list__item swiper-slide purifier-Tab silver-Tab"
+										data-price="49990"
+										data-stock="no-stock"
+										data-sale="17%"
+									>
+										<a class="card__link" href="#">
+											<div class="card-img">
+												<img
+													class="card-img__picture"
+													src="./img/offers/offer-8.jpg"
+													alt="Dyson Purifier Hot+Cool сильный HEPA‑фильтр, вентилятор и обогреватель в одном. Удаляет аллергены, циркулирует воздух, работает как кулер."
+												/>
+											</div>
+											<h3 class="card__title">
+												Dyson Purifier Hot+Cool сильный HEPA‑фильтр
+											</h3>
+											<div class="card-price">
+												<p class="card-price__stock card-price__stock--soldout">
+													Нет в наличии
+												</p>
+												<div class="card-price__sale">-17%</div>
+												<p class="card-price__now">49 990 Р</p>
+												<p class="card-price__before">59 990 Р</p>
+											</div>
+										</a>
+										<form class="card-form">
+											<div class="card-form__input">
+												<button
+													class="input__button input-decrement input__button--disabled"
+												>
+													<svg
+														width="20"
+														height="2"
+														viewBox="0 0 20 2"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M19 1H1"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+												<input type="number" value="1" min="1" />
+												<button class="input__button input-increment">
+													<svg
+														width="20"
+														height="20"
+														viewBox="0 0 20 20"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M10.0003 19L10.0346 10M10.0003 1L10.0346 10M10.0346 10H19M10.0346 10H0.999999"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+											</div>
+											<button class="button in-bascet" type="submit">
+												В корзину
+											</button>
+										</form>
+									</li>
+									<li
+										class="product-cards-list__item swiper-slide styler-Tab topaz-Tab"
+										data-price="45990"
+										data-stock="in-stock"
+										data-sale="25%"
+									>
+										<a class="card__link" href="#">
+											<div class="card-img">
+												<img
+													class="card-img__picture"
+													src="./img/offers/offer-9.jpg"
+													alt="Dyson Airwrap Straight+Wavy Ceramic Patina/Topaz с 6 насадками и адаптивным управлением через Bluetooth. Curl, wave, smooth, hide flyaways без сильного тепла."
+												/>
+											</div>
+											<h3 class="card__title">
+												Dyson Airwrap Straight+Wavy Ceramic Patina/Topaz с 6
+												насадками
+											</h3>
+											<div class="card-price">
+												<p class="card-price__stock">В наличии</p>
+												<div class="card-price__sale">-25%</div>
+												<p class="card-price__now">45 990 Р</p>
+												<p class="card-price__before">60 990 Р</p>
+											</div>
+										</a>
+										<form class="card-form">
+											<div class="card-form__input">
+												<button
+													class="input__button input-decrement input__button--disabled"
+												>
+													<svg
+														width="20"
+														height="2"
+														viewBox="0 0 20 2"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M19 1H1"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+												<input type="number" value="1" min="1" />
+												<button class="input__button input-increment">
+													<svg
+														width="20"
+														height="20"
+														viewBox="0 0 20 20"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M10.0003 19L10.0346 10M10.0003 1L10.0346 10M10.0346 10H19M10.0346 10H0.999999"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+											</div>
+											<button class="button in-bascet" type="submit">
+												В корзину
+											</button>
+										</form>
+									</li>
+									<li
+										class="product-cards-list__item swiper-slide styler-Tab hs05-Tab silver-Tab"
+										data-price="46990"
+										data-stock="in-stock"
+										data-sale="10%"
+									>
+										<a class="card__link" href="#">
+											<div class="card-img">
+												<img
+													class="card-img__picture"
+													src="./img/offers/offer-10.jpg"
+													alt="Стайлер Airwrap Complete Long HS05 Prussian Blue/Rich Cooper (Берлинская лазурь/Медь)"
+												/>
+											</div>
+											<h3 class="card__title">
+												Стайлер Airwrap Complete Long HS05 Prussian Blue/Rich
+												Cooper
+											</h3>
+											<div class="card-price">
+												<p class="card-price__stock">В наличии</p>
+												<div class="card-price__sale">-10%</div>
+												<p class="card-price__now">46 990 Р</p>
+												<p class="card-price__before">51 990 Р</p>
+											</div>
+										</a>
+										<form class="card-form">
+											<div class="card-form__input">
+												<button
+													class="input__button input-decrement input__button--disabled"
+												>
+													<svg
+														width="20"
+														height="2"
+														viewBox="0 0 20 2"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M19 1H1"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+												<input type="number" value="1" min="1" />
+												<button class="input__button input-increment">
+													<svg
+														width="20"
+														height="20"
+														viewBox="0 0 20 20"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M10.0003 19L10.0346 10M10.0003 1L10.0346 10M10.0346 10H19M10.0346 10H0.999999"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+											</div>
+											<button class="button in-bascet" type="submit">
+												В корзину
+											</button>
+										</form>
+									</li>
+									<li
+										class="product-cards-list__item swiper-slide vacuum-cleaner-Tab v12-Tab silver-Tab"
+										data-price="45990"
+										data-stock="in-stock"
+										data-sale="40%"
+									>
+										<a class="card__link" href="#">
+											<div class="card-img">
+												<img
+													class="card-img__picture"
+													src="./img/offers/offer-11.jpg"
+													alt="Пылесос Dyson V12 Detect slim absolute (SV46 UK, yellow/nickel"
+												/>
+											</div>
+											<h3 class="card__title">
+												Пылесос Dyson V12 Detect slim absolute (SV46) UK,
+												yellow/nickel
+											</h3>
+											<div class="card-price">
+												<p class="card-price__stock">В наличии</p>
+												<div class="card-price__sale">-40%</div>
+												<p class="card-price__now">45 990 Р</p>
+												<p class="card-price__before">79 990 Р</p>
+											</div>
+										</a>
+										<form class="card-form">
+											<div class="card-form__input">
+												<button
+													class="input__button input-decrement input__button--disabled"
+												>
+													<svg
+														width="20"
+														height="2"
+														viewBox="0 0 20 2"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M19 1H1"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+												<input type="number" value="1" min="1" />
+												<button class="input__button input-increment">
+													<svg
+														width="20"
+														height="20"
+														viewBox="0 0 20 20"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M10.0003 19L10.0346 10M10.0003 1L10.0346 10M10.0346 10H19M10.0346 10H0.999999"
+															stroke="#111111"
+															stroke-width="2"
+															stroke-linecap="round"
+														/>
+													</svg>
+												</button>
+											</div>
+											<button class="button in-bascet" type="submit">
+												В корзину
+											</button>
+										</form>
+									</li>
+								</ul>
+								<div class="swiper_comunication">
+									<button class="card-prev" type="button">
+										<svg
+											width="35"
+											height="30"
+											viewBox="0 0 35 30"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M3.58768 16.1698L33.3387 15.8428C33.8909 15.8367 34.3337 15.3841 34.3276 14.8318C34.3215 14.2796 33.8689 13.8368 33.3167 13.8429L3.42033 14.1715L15.0001 1.81932C15.3778 1.4164 15.3574 0.783566 14.9545 0.405844C14.5515 0.0281214 13.9187 0.048547 13.541 0.451466L0.358522 14.5133C-0.0192005 14.9162 0.00122539 15.549 0.404144 15.9268L15.1086 29.7117C15.5116 30.0894 16.1444 30.069 16.5221 29.6661C16.8998 29.2632 16.8794 28.6303 16.4765 28.2526L3.58768 16.1698Z"
+												fill="#111111"
+											/>
+										</svg>
+									</button>
+									<button class="card-next" type="button">
+										<svg
+											width="35"
+											height="30"
+											viewBox="0 0 35 30"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M31.4123 16.1698L1.66134 15.8428C1.10909 15.8367 0.666325 15.3841 0.672395 14.8318C0.678466 14.2796 1.13108 13.8368 1.68333 13.8429L31.5797 14.1715L19.9999 1.81932C19.6222 1.4164 19.6426 0.783566 20.0455 0.405844C20.4485 0.0281214 21.0813 0.048547 21.459 0.451466L34.6415 14.5133C35.0192 14.9162 34.9988 15.549 34.5959 15.9268L19.8914 29.7117C19.4884 30.0894 18.8556 30.069 18.4779 29.6661C18.1002 29.2632 18.1206 28.6303 18.5235 28.2526L31.4123 16.1698Z"
+												fill="#111111"
+											/>
+										</svg>
+									</button>
+									<div class="card-pagination"></div>
+								</div>
+							</div>
+							<div class="filter-selector">
+								<div class="selected__filter">
+									<span class="filter-text">Сначала популярный</span>
+									<svg
+										width="8"
+										height="6"
+										viewBox="0 0 8 6"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M0.366819 1.64018C-0.175953 0.988856 0.287204 0 1.13504 0H6.86496C7.7128 0 8.17595 0.988858 7.63318 1.64018L4.76822 5.07814C4.36843 5.55789 3.63157 5.55789 3.23178 5.07813L0.366819 1.64018Z"
+											fill="#111111"
+										/>
+									</svg>
+								</div>
+								<ul class="filter__list" id="filter__list">
+									<li class="most-ricey filter__list__item" data-sort="desc">
+										<span>Сначала дорогие</span>
+										<svg
+											width="17"
+											height="11"
+											viewBox="0 0 17 11"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M16.2071 0.292893C16.5976 0.683417 16.5976 1.31658 16.2071 1.70711L7.20711 10.7071C6.81658 11.0976 6.18342 11.0976 5.79289 10.7071L0.292893 5.20711C-0.0976311 4.81658 -0.0976311 4.18342 0.292893 3.79289C0.683417 3.40237 1.31658 3.40237 1.70711 3.79289L6.5 8.58579L14.7929 0.292893C15.1834 -0.0976311 15.8166 -0.0976311 16.2071 0.292893Z"
+												fill="#C5358C"
+											/>
+										</svg>
+									</li>
+									<li class="most-cheap filter__list__item" data-sort="asc">
+										<span>Сначала дешевые</span>
+										<svg
+											width="17"
+											height="11"
+											viewBox="0 0 17 11"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M16.2071 0.292893C16.5976 0.683417 16.5976 1.31658 16.2071 1.70711L7.20711 10.7071C6.81658 11.0976 6.18342 11.0976 5.79289 10.7071L0.292893 5.20711C-0.0976311 4.81658 -0.0976311 4.18342 0.292893 3.79289C0.683417 3.40237 1.31658 3.40237 1.70711 3.79289L6.5 8.58579L14.7929 0.292893C15.1834 -0.0976311 15.8166 -0.0976311 16.2071 0.292893Z"
+												fill="#C5358C"
+											/>
+										</svg>
+									</li>
+									<li class="in-stock filter__list__item" data-sort="stock">
+										<span>В наличии</span>
+										<svg
+											width="17"
+											height="11"
+											viewBox="0 0 17 11"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M16.2071 0.292893C16.5976 0.683417 16.5976 1.31658 16.2071 1.70711L7.20711 10.7071C6.81658 11.0976 6.18342 11.0976 5.79289 10.7071L0.292893 5.20711C-0.0976311 4.81658 -0.0976311 4.18342 0.292893 3.79289C0.683417 3.40237 1.31658 3.40237 1.70711 3.79289L6.5 8.58579L14.7929 0.292893C15.1834 -0.0976311 15.8166 -0.0976311 16.2071 0.292893Z"
+												fill="#C5358C"
+											/>
+										</svg>
+									</li>
+									<li class="best-benefit filter__list__item" data-sort="sale">
+										<span>Наибольшая выгода</span>
+										<svg
+											width="17"
+											height="11"
+											viewBox="0 0 17 11"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M16.2071 0.292893C16.5976 0.683417 16.5976 1.31658 16.2071 1.70711L7.20711 10.7071C6.81658 11.0976 6.18342 11.0976 5.79289 10.7071L0.292893 5.20711C-0.0976311 4.81658 -0.0976311 4.18342 0.292893 3.79289C0.683417 3.40237 1.31658 3.40237 1.70711 3.79289L6.5 8.58579L14.7929 0.292893C15.1834 -0.0976311 15.8166 -0.0976311 16.2071 0.292893Z"
+												fill="#C5358C"
+											/>
+										</svg>
+									</li>
+									<li
+										class="most-popular filter__list__item filter__list__item--active"
+										data-sort="popular"
+									>
+										<span>Сначала популярный</span>
+										<svg
+											width="17"
+											height="11"
+											viewBox="0 0 17 11"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M16.2071 0.292893C16.5976 0.683417 16.5976 1.31658 16.2071 1.70711L7.20711 10.7071C6.81658 11.0976 6.18342 11.0976 5.79289 10.7071L0.292893 5.20711C-0.0976311 4.81658 -0.0976311 4.18342 0.292893 3.79289C0.683417 3.40237 1.31658 3.40237 1.70711 3.79289L6.5 8.58579L14.7929 0.292893C15.1834 -0.0976311 15.8166 -0.0976311 16.2071 0.292893Z"
+												fill="#C5358C"
+											/>
+										</svg>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="accordion">
+					<div class="container">
+						<h2 class="accordion-title">FAQ — Часто задаваемые вопросы</h2>
+						<ul class="accordion-list">
+							<li class="accordion__item">
+								<hgroup class="accordion-list__control">
+									<h3 class="accordion__item-title">
+										Главное отличие фена Dyson в быстром и безопасном
+										высушивании волос?
+									</h3>
+									<button class="accordion-plus-button">
+										<div class="accordion-plus-button__icon"></div>
+									</button>
+								</hgroup>
+								<div class="accordion__item-text">
+									<span
+										>Главное отличие фена Dyson в быстром и безопасном
+										высушивании волос. В рукоятку встроен датчик температуры,
+										благодаря которому она не поднимается выше 100 градусов. В
+										комплекте 5 насадок, которые подходят для укладки и сушки на
+										разных режимах. Есть практичный черный чехол,
+										предназначенный для аккуратной перевозки и хранения.
+										Расчески можно использовать отдельно от девайса или во время
+										сушки с целью предотвратить запутывание.</span
+									>
+								</div>
+							</li>
+							<li class="accordion__item">
+								<hgroup class="accordion-list__control">
+									<h3 class="accordion__item-title">
+										В рукоятку встроен датчик температуры, благодаря которому
+										она не поднимается выше 100 градусов?
+									</h3>
+									<button class="accordion-plus-button">
+										<div class="accordion-plus-button__icon"></div>
+									</button>
+								</hgroup>
+								<div class="accordion__item-text">
+									<span>
+										Да, фен Dyson контролирует температуру 40 раз в секунду,
+										предотвращая перегрев. Обычные фены могут нагреваться до
+										150°C, повреждая волосы, но Dyson поддерживает оптимальную
+										температуру (до 100°C). Это особенно важно для тонких и
+										окрашенных волос, так как снижает риск ломкости и сухости.
+									</span>
+								</div>
+							</li>
+							<li class="accordion__item">
+								<hgroup class="accordion-list__control">
+									<h3 class="accordion__item-title">
+										Почему фен Dyson не пересушивает кожу головы?
+									</h3>
+									<button class="accordion-plus-button">
+										<div class="accordion-plus-button__icon"></div>
+									</button>
+								</hgroup>
+								<div class="accordion__item-text">
+									<span>
+										Dyson использует интеллектуальную систему терморегуляции,
+										которая автоматически снижает нагрев, если датчики фиксируют
+										риск пересушивания. Кроме того, плавный воздушный поток
+										равномерно распределяет тепло, не создавая локальных
+										перегревов. Это делает сушку комфортной даже для
+										чувствительной кожи.
+									</span>
+								</div>
+							</li>
+							<li class="accordion__item">
+								<hgroup class="accordion-list__control">
+									<h3 class="accordion__item-title">
+										Правда ли, что Dyson уменьшает статику?
+									</h3>
+									<button class="accordion-plus-button">
+										<div class="accordion-plus-button__icon"></div>
+									</button>
+								</hgroup>
+								<div class="accordion__item-text">
+									<span>
+										Да, благодаря ионной технологии, фен нейтрализует
+										статическое электричество, делая волосы гладкими и
+										послушными. Обычные фены часто вызывают «эффект одуванчика»,
+										но Dyson подает миллионы отрицательных ионов, которые
+										«приглаживают» чешуйки кутикулы, уменьшая пушистость.
+									</span>
+								</div>
+							</li>
+							<li class="accordion__item">
+								<hgroup class="accordion-list__control">
+									<h3 class="accordion__item-title">
+										Зачем нужна магнитная насадка в комплекте?
+									</h3>
+									<button class="accordion-plus-button">
+										<div class="accordion-plus-button__icon"></div>
+									</button>
+								</hgroup>
+								<div class="accordion__item-text">
+									<span
+										>Магнитные насадки Dyson быстро меняются одним движением и
+										надежно фиксируются. Это удобно при укладке: не нужно
+										тратить время на защелки или повороты. Например,
+										насадка-диффузор равномерно распределяет воздух для объемной
+										сушки, а концентратор создает направленный поток для
+										гладкости.
+									</span>
+								</div>
+							</li>
+							<li class="accordion__item">
+								<hgroup class="accordion-list__control">
+									<h3 class="accordion__item-title">
+										Почему Dyson легче обычных фенов?
+									</h3>
+									<button class="accordion-plus-button">
+										<div class="accordion-plus-button__icon"></div>
+									</button>
+								</hgroup>
+								<div class="accordion__item-text">
+									<span
+										>Двигатель фена расположен в рукоятке, а не в головной части
+										— это улучшает баланс и снижает нагрузку на руку. Вес
+										распределен так, что даже при длительной сушке усталость
+										минимальна. Для сравнения: обычный фен мощностью 2000 Вт
+										весит ~600 г, а Dyson — всего ~500 г.
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="news">
+					<div class="container">
+						<h2 class="news__title">Новости</h2>
+						<ul class="news-list news-list--closed">
+							<li class="news-list-item">
+								<img class="news-list-item__img" src="./img/new.png" alt="" />
+								<time class="new__data">21 декабря 2022</time>
+								<hgroup class="new__body">
+									<h3 class="new__title">
+										Есть ли безопасные выпрямители для волос
+									</h3>
+									<p class="new__text">
+										Добавьте объем и рельеф коротким волосам. Посмотрите, как
+										создать мягкие, легкие локоны и волны на коротких волосах и
+										волосах средней длины.
+									</p>
+								</hgroup>
+								<a
+									class="new__link"
+									target="_blank"
+									href="https://dysonsshop.ru/novosti/est-li-bezopasnye-vypryamiteli-dlya-volos/"
+									>Читать далее</a
+								>
+							</li>
+							<li class="news-list-item">
+								<img class="news-list-item__img" src="./img/new.png" alt="" />
+								<time class="new__data">21 декабря 2022</time>
+								<hgroup class="new__body">
+									<h3 class="new__title">
+										Есть ли безопасные выпрямители для волос
+									</h3>
+									<p class="new__text">
+										Добавьте объем и рельеф коротким волосам. Посмотрите, как
+										создать мягкие, легкие локоны и волны на коротких волосах и
+										волосах средней длины.
+									</p>
+								</hgroup>
+								<a
+									class="new__link"
+									target="_blank"
+									href="https://dysonsshop.ru/novosti/est-li-bezopasnye-vypryamiteli-dlya-volos/"
+									>Читать далее</a
+								>
+							</li>
+							<li class="news-list-item">
+								<img class="news-list-item__img" src="./img/new.png" alt="" />
+								<time class="new__data">21 декабря 2022</time>
+								<hgroup class="new__body">
+									<h3 class="new__title">
+										Есть ли безопасные выпрямители для волос
+									</h3>
+									<p class="new__text">
+										Добавьте объем и рельеф коротким волосам. Посмотрите, как
+										создать мягкие, легкие локоны и волны на коротких волосах и
+										волосах средней длины.
+									</p>
+								</hgroup>
+								<a
+									class="new__link"
+									target="_blank"
+									href="https://dysonsshop.ru/novosti/est-li-bezopasnye-vypryamiteli-dlya-volos/"
+									>Читать далее</a
+								>
+							</li>
+							<li class="news-list-item">
+								<img class="news-list-item__img" src="./img/new.png" alt="" />
+								<time class="new__data">21 декабря 2022</time>
+								<hgroup class="new__body">
+									<h3 class="new__title">
+										Есть ли безопасные выпрямители для волос
+									</h3>
+									<p class="new__text">
+										Добавьте объем и рельеф коротким волосам. Посмотрите, как
+										создать мягкие, легкие локоны и волны на коротких волосах и
+										волосах средней длины.
+									</p>
+								</hgroup>
+								<a
+									class="new__link"
+									target="_blank"
+									href="https://dysonsshop.ru/novosti/est-li-bezopasnye-vypryamiteli-dlya-volos/"
+									>Читать далее</a
+								>
+							</li>
+							<li class="news-list-item">
+								<img class="news-list-item__img" src="./img/new.png" alt="" />
+								<time class="new__data">21 декабря 2022</time>
+								<hgroup class="new__body">
+									<h3 class="new__title">
+										Есть ли безопасные выпрямители для волос
+									</h3>
+									<p class="new__text">
+										Добавьте объем и рельеф коротким волосам. Посмотрите, как
+										создать мягкие, легкие локоны и волны на коротких волосах и
+										волосах средней длины.
+									</p>
+								</hgroup>
+								<a
+									class="new__link"
+									target="_blank"
+									href="https://dysonsshop.ru/novosti/est-li-bezopasnye-vypryamiteli-dlya-volos/"
+									>Читать далее</a
+								>
+							</li>
+							<li class="news-list-item">
+								<img class="news-list-item__img" src="./img/new.png" alt="" />
+								<time class="new__data">21 декабря 2022</time>
+								<hgroup class="new__body">
+									<h3 class="new__title">
+										Есть ли безопасные выпрямители для волос
+									</h3>
+									<p class="new__text">
+										Добавьте объем и рельеф коротким волосам. Посмотрите, как
+										создать мягкие, легкие локоны и волны на коротких волосах и
+										волосах средней длины.
+									</p>
+								</hgroup>
+								<a
+									class="new__link"
+									target="_blank"
+									href="https://dysonsshop.ru/novosti/est-li-bezopasnye-vypryamiteli-dlya-volos/"
+									>Читать далее</a
+								>
+							</li>
+							<li class="news-list-item">
+								<img class="news-list-item__img" src="./img/new.png" alt="" />
+								<time class="new__data">21 декабря 2022</time>
+								<hgroup class="new__body">
+									<h3 class="new__title">
+										Есть ли безопасные выпрямители для волос
+									</h3>
+									<p class="new__text">
+										Добавьте объем и рельеф коротким волосам. Посмотрите, как
+										создать мягкие, легкие локоны и волны на коротких волосах и
+										волосах средней длины.
+									</p>
+								</hgroup>
+								<a
+									class="new__link"
+									target="_blank"
+									href="https://dysonsshop.ru/novosti/est-li-bezopasnye-vypryamiteli-dlya-volos/"
+									>Читать далее</a
+								>
+							</li>
+							<li class="news-list-item">
+								<img class="news-list-item__img" src="./img/new.png" alt="" />
+								<time class="new__data">21 декабря 2022</time>
+								<hgroup class="new__body">
+									<h3 class="new__title">
+										Есть ли безопасные выпрямители для волос
+									</h3>
+									<p class="new__text">
+										Добавьте объем и рельеф коротким волосам. Посмотрите, как
+										создать мягкие, легкие локоны и волны на коротких волосах и
+										волосах средней длины.
+									</p>
+								</hgroup>
+								<a
+									class="new__link"
+									target="_blank"
+									href="https://dysonsshop.ru/novosti/est-li-bezopasnye-vypryamiteli-dlya-volos/"
+									>Читать далее</a
+								>
+							</li>
+							<li class="news-list-item">
+								<img class="news-list-item__img" src="./img/new.png" alt="" />
+								<time class="new__data">21 декабря 2022</time>
+								<hgroup class="new__body">
+									<h3 class="new__title">
+										Есть ли безопасные выпрямители для волос
+									</h3>
+									<p class="new__text">
+										Добавьте объем и рельеф коротким волосам. Посмотрите, как
+										создать мягкие, легкие локоны и волны на коротких волосах и
+										волосах средней длины.
+									</p>
+								</hgroup>
+								<a
+									class="new__link"
+									target="_blank"
+									href="https://dysonsshop.ru/novosti/est-li-bezopasnye-vypryamiteli-dlya-volos/"
+									>Читать далее</a
+								>
+							</li>
+						</ul>
+						<button class="button show__more">
+							<span class="show-more__text">Показать еще</span>
 							<svg
-								width="33"
-								height="38"
-								viewBox="0 0 33 38"
+								width="27"
+								height="25"
+								viewBox="0 0 27 25"
 								fill="none"
 								xmlns="http://www.w3.org/2000/svg"
 							>
 								<path
-									d="M32 17.268C33.3333 18.0378 33.3333 19.9623 32 20.7321L3.5 37.1865C2.16667 37.9563 0.500002 36.9941 0.500002 35.4545L0.500004 2.54552C0.500004 1.00592 2.16667 0.0436645 3.5 0.813465L32 17.268Z"
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M22.7031 22.722L1.22199 2.13588C0.823245 1.75375 0.809777 1.12073 1.19191 0.721988C1.57403 0.323245 2.20706 0.309777 2.6058 0.691906L24.1919 21.3786V4.44733C24.1919 3.89504 24.6396 3.44733 25.1919 3.44733C25.7442 3.44733 26.1919 3.89504 26.1919 4.44733V23.722C26.1919 24.2743 25.7442 24.722 25.1919 24.722H5.03635C4.48406 24.722 4.03635 24.2743 4.03635 23.722C4.03635 23.1697 4.48406 22.722 5.03635 22.722H22.7031Z"
 									fill="#111111"
 								/>
 							</svg>
-						</a>
+						</button>
 					</div>
-				</div>
-			</section>
+				</section>
+				<section class="feedback" id="contact">
+					<div class="container">
+						<div class="feedback__inner">
+							<form class="feedback__name-tel form" id="form">
+								<legend class="feedback__legend">Свяжитесь с нами</legend>
+								<input
+									class="feedback__input"
+									name="username"
+									type="text"
+									placeholder="Ваше имя"
+									required
+								/>
+								<svg
+									width="555"
+									height="2"
+									viewBox="0 0 555 2"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path d="M0 1H555" stroke="#111111" />
+								</svg>
+								<input
+									class="feedback__input"
+									name="user-phone"
+									type="tel"
+									placeholder="Ваш номер телефона"
+									required
+								/>
+								<svg
+									width="555"
+									height="2"
+									viewBox="0 0 555 2"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path d="M0 1H555" stroke="#111111" />
+								</svg>
+								<button class="button feedback__button" type="submit" disabled>
+									Оставить заявку
+								</button>
+							</form>
+							<form class="feedback__email form" id="form">
+								<legend class="feedback__legend">Подпишитесь на новости</legend>
+								<input
+									class="feedback__input"
+									name="user-email"
+									type="email"
+									placeholder="Ваш e-mail"
+									required
+								/>
+								<svg
+									width="555"
+									height="2"
+									viewBox="0 0 555 2"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path d="M0 1H555" stroke="#111111" />
+								</svg>
+								<button class="button feedback__button" type="submit" disabled>
+									Подписаться
+								</button>
+								<label class="feedback__checkbox">
+									<input
+										class="checkbox"
+										name="checkbox"
+										type="checkbox"
+										required
+									/>
+									<span>
+										Я ознакомлен(а) с
+										<a href="#" target="_blank">
+											политикой конфиденциальности
+										</a>
+										и согласен(а) с обработкой
+										<a href="#" target="_blank"> персональных данных </a>
+									</span>
+								</label>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
 			<footer class="footer">
 				<div class="container">
 					<a class="logo" href="#">
@@ -256,7 +1928,11 @@
 							>
 							<ul class="socials__list">
 								<li class="socials__item">
-									<a class="socials__link" href="#">
+									<a
+										class="socials__link"
+										target="_blank"
+										href="https://t.me/s/aroken"
+									>
 										<svg
 											width="40"
 											height="40"
@@ -285,7 +1961,11 @@
 									</a>
 								</li>
 								<li class="socials__item">
-									<a class="socials__link" href="#">
+									<a
+										class="socials__link"
+										target="_blank"
+										href="https://vk.com/arokenru"
+									>
 										<svg
 											width="40"
 											height="40"
@@ -312,7 +1992,11 @@
 									</a>
 								</li>
 								<li class="socials__item">
-									<a class="socials__link" href="#">
+									<a
+										class="socials__link"
+										target="_blank"
+										href="https://www.youtube.com/@арокен"
+									>
 										<svg
 											width="40"
 											height="40"
@@ -349,6 +2033,7 @@
 				</div>
 			</footer>
 		</div>
+		<script src="./js/swiper-bundle.min.js"></script>
 		<script src="./js/main.js"></script>
 	</body>
 </html>
